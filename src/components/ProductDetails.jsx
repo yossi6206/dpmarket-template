@@ -26,7 +26,7 @@ const ProductDetails = () => {
                                             href="#"
                                             className="btn btn-main d-inline-flex align-items-center gap-2 pill px-sm-5 justify-content-center"
                                         >
-                                            Live Preview
+                                            תצוגה מקדימה
                                             <img src="assets/images/icons/eye-outline.svg" alt="" />
                                         </Link>
                                         <Link scroll={false}
@@ -34,7 +34,7 @@ const ProductDetails = () => {
                                             className="screenshot-btn btn btn-white pill px-sm-5"
                                             data-images='["assets/images/thumbs/product-details.png", "assets/images/thumbs/product-details.png"]'
                                         >
-                                            Screenshot
+                                            צילום מסך
                                         </Link>
                                     </div>
                                     <p className="product-details__desc">
@@ -48,42 +48,42 @@ const ProductDetails = () => {
                                     </p>
                                     <div className="product-details__item">
                                         <h5 className="product-details__title mb-3">
-                                            Template Features
+                                            תכונות התבנית
                                         </h5>
                                         <ul className="product-list">
                                             <li className="product-list__item">
-                                                Modern and Professional design
+                                                עיצוב מודרני ומקצועי
                                             </li>
                                             <li className="product-list__item">
-                                                Built with Elementor Pro
+                                                נבנה עם Elementor Pro
                                             </li>
                                             <li className="product-list__item">
-                                                100% Responsive &amp; mobile-friendly
+                                                100% רספונסיבי וידידותי לנייד
                                             </li>
                                             <li className="product-list__item">
-                                                12+ pre-built templates
+                                                12+ תבניות מוכנות מראש
                                             </li>
-                                            <li className="product-list__item">Easy to customize</li>
+                                            <li className="product-list__item">קל להתאמה אישית</li>
                                             <li className="product-list__item">
-                                                Fully responsive website
+                                                אתר רספונסיבי לחלוטין
                                             </li>
                                         </ul>
                                     </div>
                                     <div className="product-details__item">
-                                        <h5 className="product-details__title mb-3">Layout Features</h5>
+                                        <h5 className="product-details__title mb-3">תכונות פריסה</h5>
                                         <ul className="product-list">
-                                            <li className="product-list__item">One-Click demo import</li>
-                                            <li className="product-list__item">Unlimited color style</li>
-                                            <li className="product-list__item">850+ google fonts</li>
-                                            <li className="product-list__item">Powered by dpmarket</li>
+                                            <li className="product-list__item">ייבוא דמו בלחיצה אחת</li>
+                                            <li className="product-list__item">צבעים ללא הגבלה</li>
+                                            <li className="product-list__item">850+ פונטים של גוגל</li>
+                                            <li className="product-list__item">מופעל על ידי dpmarket</li>
                                             <li className="product-list__item">
-                                                Hight resolution images
+                                                תמונות ברזולוציה גבוהה
                                             </li>
-                                            <li className="product-list__item">Easy to customize</li>
+                                            <li className="product-list__item">קל להתאמה אישית</li>
                                         </ul>
                                     </div>
                                     <div className="product-details__item">
-                                        <h5 className="product-details__title mb-3">Font Family</h5>
+                                        <h5 className="product-details__title mb-3">משפחת גופנים</h5>
                                         <ul className="product-list">
                                             <li className="product-list__item text-heading">
                                                 <Link scroll={false}
@@ -104,7 +104,7 @@ const ProductDetails = () => {
                                         </ul>
                                     </div>
                                     <div className="product-details__item">
-                                        <h5 className="product-details__title mb-3">Support</h5>
+                                        <h5 className="product-details__title mb-3">תמיכה</h5>
                                         <p className="product-details__desc">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                             do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -117,12 +117,12 @@ const ProductDetails = () => {
                                     </div>
                                     <div className="more-item">
                                         <div className="flx-between mb-4">
-                                            <h5 className="more-item__title">More Items</h5>
+                                            <h5 className="more-item__title">פריטים נוספים</h5>
                                             <Link scroll={false}
                                                 href="/profile"
                                                 className="text-heading fw-500 hover-text-decoration-underline"
                                             >
-                                                View Author Profile
+                                                צפה בפרופיל היוצר
                                             </Link>
                                         </div>
                                         <div className="more-item__content flx-align">
@@ -237,7 +237,7 @@ const ProductDetails = () => {
                                                 <span className="product-review__reason">
                                                     For{" "}
                                                     <span className="product-review__subject">
-                                                        Customer Support
+                                                        שירות לקוחות
                                                     </span>{" "}
                                                 </span>
                                             </div>
@@ -246,7 +246,7 @@ const ProductDetails = () => {
                                                 <Link scroll={false} href="#" className="product-review__user text--base">
                                                     John Doe{" "}
                                                 </Link>{" "}
-                                                2 month ago
+                                                לפני חודשיים
                                             </div>
                                         </div>
                                         <div className="product-review__body">
@@ -289,7 +289,7 @@ const ProductDetails = () => {
                                                 <span className="product-review__reason">
                                                     For{" "}
                                                     <span className="product-review__subject">
-                                                        Customer Support
+                                                        שירות לקוחות
                                                     </span>{" "}
                                                 </span>
                                             </div>
@@ -298,7 +298,7 @@ const ProductDetails = () => {
                                                 <Link scroll={false} href="#" className="product-review__user text--base">
                                                     John Doe{" "}
                                                 </Link>{" "}
-                                                2 month ago
+                                                לפני חודשיים
                                             </div>
                                         </div>
                                         <div className="product-review__body">
@@ -326,7 +326,7 @@ const ProductDetails = () => {
                             >
                                 {/* Comment Start */}
                                 <div className="comment mt-64 mb-64">
-                                    <h5 className="mb-32">2 Comments</h5>
+                                    <h5 className="mb-32">2 תגובות</h5>
                                     <ul className="comment-list">
                                         <li className="comment-list__item d-flex align-items-start gap-sm-4 gap-3">
                                             <div className="comment-list__thumb flex-shrink-0">
@@ -350,7 +350,7 @@ const ProductDetails = () => {
                                                         className="comment-list__reply fw-500 flx-align gap-2 hover-text-decoration-underline"
                                                         href="#comment-box"
                                                     >
-                                                        Reply
+                                                        הגב
                                                         <span className="icon">
                                                             <img
                                                                 src="assets/images/icons/reply-icon.svg"
@@ -391,7 +391,7 @@ const ProductDetails = () => {
                                                                 className="comment-list__reply fw-500 flx-align gap-2 hover-text-decoration-underline"
                                                                 href="#comment-box"
                                                             >
-                                                                Reply
+                                                                הגב
                                                                 <span className="icon">
                                                                     <img
                                                                         src="assets/images/icons/reply-icon.svg"
@@ -423,12 +423,12 @@ const ProductDetails = () => {
                                     type="button"
                                     className="btn-has-dropdown font-heading font-18"
                                 >
-                                    Extended License
+                                    רישיון מורחב
                                 </button>
                                 <div className="license-dropdown">
                                     <div className="license-dropdown__item mb-3">
                                         <h6 className="license-dropdown__title font-body mb-1 font-16">
-                                            Regular License
+                                            רישיון רגיל
                                         </h6>
                                         <p className="license-dropdown__desc font-13">
                                             Use, by you or one client, in a solitary finished result which
@@ -438,7 +438,7 @@ const ProductDetails = () => {
                                     </div>
                                     <div className="license-dropdown__item">
                                         <h6 className="license-dropdown__title font-body mb-1 font-16">
-                                            Extended License
+                                            רישיון מורחב
                                         </h6>
                                         <p className="license-dropdown__desc font-13">
                                             Use, by you or one client, in a solitary final result which
@@ -451,7 +451,7 @@ const ProductDetails = () => {
                                             href="#"
                                             className="link hover-text-decoration-underline font-14 text-main fw-500"
                                         >
-                                            View License Details
+                                            צפה בפרטי הרישיון
                                         </Link>
                                     </div>
                                 </div>
@@ -462,19 +462,19 @@ const ProductDetails = () => {
                                     <span className="icon">
                                         <img src="assets/images/icons/check-cirlce.svg" alt="" />
                                     </span>
-                                    <span className="text">Quality verified</span>
+                                    <span className="text">איכות מאומתת</span>
                                 </li>
                                 <li className="sidebar-list__item flx-align gap-2 font-14 fw-300 mb-2">
                                     <span className="icon">
                                         <img src="assets/images/icons/check-cirlce.svg" alt="" />
                                     </span>
-                                    <span className="text">Use for a single project</span>
+                                    <span className="text">לשימוש בפרויקט בודד</span>
                                 </li>
                                 <li className="sidebar-list__item flx-align gap-2 font-14 fw-300">
                                     <span className="icon">
                                         <img src="assets/images/icons/check-cirlce.svg" alt="" />
                                     </span>
-                                    <span className="text">Non-paying users only</span>
+                                    <span className="text">למשתמשים ללא תשלום בלבד</span>
                                 </li>
                             </ul>
                             <div className="flx-between mt-3">
@@ -489,7 +489,7 @@ const ProductDetails = () => {
                                         className="form-check-label mb-0 fw-300 text-body"
                                         htmlFor="extended"
                                     >
-                                        Extended support 12 month
+                                        תמיכה מורחבת 12 חודשים
                                     </label>
                                 </div>
                                 <div className="flx-align gap-2">
@@ -504,7 +504,7 @@ const ProductDetails = () => {
                                 className="btn btn-main d-flex w-100 justify-content-center align-items-center gap-2 pill px-sm-5 mt-32"
                             >
                                 <img src="assets/images/icons/add-to-cart.svg" alt="" />
-                                Add To Cart
+                                הוסף לסל
                             </button>
                             {/* Author Details Start*/}
                             <div className="author-details">
@@ -610,34 +610,34 @@ const ProductDetails = () => {
                                     href="/profile"
                                     className="btn btn-outline-light w-100 pill mt-32"
                                 >
-                                    View Portfolio
+                                    צפה בפורטפוליו
                                 </Link>
                             </div>
                             {/* Author Details End */}
                             {/* Meta Attribute List Start */}
                             <ul className="meta-attribute">
                                 <li className="meta-attribute__item">
-                                    <span className="name">Last Update</span>
+                                    <span className="name">עדכון אחרון</span>
                                     <span className="details">Feb 21, 2024</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Published</span>
+                                    <span className="name">פורסם</span>
                                     <span className="details">Feb 15, 2024</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Category</span>
-                                    <span className="details">Themes</span>
+                                    <span className="name">קטגוריה</span>
+                                    <span className="details">ערכות נושא</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Widget Ready</span>
+                                    <span className="name">מוכן לווידג'טים</span>
                                     <span className="details">Yes</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">High Resolution</span>
+                                    <span className="name">רזולוציה גבוהה</span>
                                     <span className="details">Yes</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Copatible with</span>
+                                    <span className="name">תואם ל</span>
                                     <span className="details">
                                         <Link scroll={false} href="#" className="hover-text-decoration-underline">
                                             Contact Form 7,
@@ -661,15 +661,15 @@ const ProductDetails = () => {
                                     </span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">File size</span>
+                                    <span className="name">גודל קובץ</span>
                                     <span className="details">85 MB</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Framework</span>
+                                    <span className="name">פריימוורק</span>
                                     <span className="details">Underscores</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Software Version</span>
+                                    <span className="name">גרסת תוכנה</span>
                                     <span className="details">
                                         <Link scroll={false} href="#" className="hover-text-decoration-underline">
                                             WordPress 6.3.x,
@@ -689,7 +689,7 @@ const ProductDetails = () => {
                                     </span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Marketplace Files Included</span>
+                                    <span className="name">קבצים כלולים</span>
                                     <span className="details">
                                         <Link scroll={false} href="#" className="hover-text-decoration-underline">
                                             PHP Files,
@@ -706,11 +706,11 @@ const ProductDetails = () => {
                                     </span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Layout</span>
-                                    <span className="details">Responsive</span>
+                                    <span className="name">פריסה</span>
+                                    <span className="details">רספונסיבי</span>
                                 </li>
                                 <li className="meta-attribute__item">
-                                    <span className="name">Tags</span>
+                                    <span className="name">תגיות</span>
                                     <span className="details">
                                         <Link scroll={false} href="#" className="hover-text-decoration-underline">
                                             theme,

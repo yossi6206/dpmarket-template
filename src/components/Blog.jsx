@@ -27,7 +27,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Hiring
+                      גיוס
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -47,14 +47,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      How to hire a right business executive for your company
+                      איך לגייס מנהל עסקי מתאים לחברה שלך
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Workshop
+                      סדנה
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -96,14 +96,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      The Gig Economy: Adapting to a Flexible Workforce
+                      כלכלת הגיג: התאמה לכוח עבודה גמיש
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -152,7 +152,7 @@ const Blog = () => {
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -201,7 +201,7 @@ const Blog = () => {
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -223,7 +223,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Hiring
+                      גיוס
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -243,14 +243,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      How to hire a right business executive for your company
+                      איך לגייס מנהל עסקי מתאים לחברה שלך
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -272,7 +272,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Workshop
+                      סדנה
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -292,14 +292,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      The Gig Economy: Adapting to a Flexible Workforce
+                      כלכלת הגיג: התאמה לכוח עבודה גמיש
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -321,7 +321,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Hiring
+                      גיוס
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -341,14 +341,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      How to hire a right business executive for your company
+                      איך לגייס מנהל עסקי מתאים לחברה שלך
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -370,7 +370,7 @@ const Blog = () => {
                       href="/blog"
                       className="post-item__tag pill font-14 text-heading fw-500 hover-text-main"
                     >
-                      Workshop
+                      סדנה
                     </Link>
                     <div className="post-item__date font-14 flx-align gap-2 font-14 text-heading fw-500">
                       <span className="icon">
@@ -390,14 +390,14 @@ const Blog = () => {
                   </div>
                   <h5 className="post-item__title">
                     <Link scroll={false} href="/blog-details" className="link">
-                      The Gig Economy: Adapting to a Flexible Workforce
+                      כלכלת הגיג: התאמה לכוח עבודה גמיש
                     </Link>
                   </h5>
                   <Link scroll={false}
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
@@ -446,7 +446,7 @@ const Blog = () => {
                     href="/blog-details"
                     className="btn btn-outline-light pill fw-600"
                   >
-                    Read More{" "}
+                    קרא עוד{" "}
                   </Link>
                 </div>
               </div>
