@@ -276,6 +276,34 @@
       
       .section-heading__inner {
         text-align: right !important;
+        
+        .section-heading__title,
+        .section-heading__desc {
+          text-align: right !important;
+        }
+      }
+      
+      > a.btn {
+        order: -1 !important;
+      }
+    }
+  }
+  
+  // General fix for all section headings with flx-between
+  .section-heading.style-left,
+  .section-heading.style-flex {
+    &.flx-between {
+      flex-direction: row-reverse !important;
+      
+      > div,
+      > .section-heading__inner {
+        text-align: right !important;
+        order: 2 !important;
+      }
+      
+      > a,
+      > .btn {
+        order: 1 !important;
       }
     }
   }
