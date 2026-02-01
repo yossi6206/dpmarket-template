@@ -68,10 +68,10 @@ const Testimonial = () => {
       <div className="container container-two">
         <div className="section-heading style-left style-flex flx-between align-items-end gap-3">
           <div className="section-heading__inner w-lg">
-            <h3 className="section-heading__title">Clients Feedback</h3>
+            <h3 className="section-heading__title">מה הלקוחות אומרים</h3>
           </div>
           <Link scroll={false} href="#" className="btn btn-main btn-lg pill">
-            More Feedback
+            עוד ביקורות
           </Link>
         </div>
         <div className="testimonial-slider">
@@ -130,7 +130,7 @@ const Testimonial = () => {
                 <div className="client-info__content">
                   <h5 className="client-info__name mb-2">Michel John</h5>
                   <span className="client-info__designation text-heading fw-500">
-                    Market Expert
+                    מומחה שיווק
                   </span>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const Testimonial = () => {
                 <div className="client-info__content">
                   <h5 className="client-info__name mb-2">Ralph Edwards</h5>
                   <span className="client-info__designation text-heading fw-500">
-                    Analytis
+                    אנליסט
                   </span>
                 </div>
               </div>
@@ -248,7 +248,7 @@ const Testimonial = () => {
                 <div className="client-info__content">
                   <h5 className="client-info__name mb-2">Jacob Jones</h5>
                   <span className="client-info__designation text-heading fw-500">
-                    Market Expert
+                    מומחה שיווק
                   </span>
                 </div>
               </div>

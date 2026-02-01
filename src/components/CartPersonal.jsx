@@ -7,23 +7,23 @@ const CartPersonal = () => {
           <div className="row gy-5">
             <div className="col-lg-8 pe-sm-5">
               <div className="cart-personal__content">
-                <h5 className="cart-personal__title mb-32">Personal information</h5>
+                <h5 className="cart-personal__title mb-32">פרטים אישיים</h5>
                 <form action="#">
                   <div className="mb-4">
                     <label
                       htmlFor="email"
                       className="form-label font-18 mb-2 fw-500 font-heading"
                     >
-                      Email Address <span className="text-danger">*</span>{" "}
+                      כתובת אימייל <span className="text-danger">*</span>{" "}
                     </label>
                     <span className="text d-block mb-2">
-                      We will send the purchase receipt to this address.
+                      נשלח את אישור הרכישה לכתובת זו.
                     </span>
                     <input
                       type="email"
                       className="common-input"
                       id="email"
-                      placeholder="Email address"
+                      placeholder="כתובת אימייל"
                     />
                   </div>
                   <div className="mb-4">
@@ -31,16 +31,16 @@ const CartPersonal = () => {
                       htmlFor="name"
                       className="form-label font-18 mb-2 fw-500 font-heading"
                     >
-                      First Name <span className="text-danger">*</span>{" "}
+                      שם פרטי <span className="text-danger">*</span>{" "}
                     </label>
                     <span className="text d-block mb-2">
-                      We will use this to personalize your account experience.
+                      נשתמש בזה כדי להתאים אישית את חוויית החשבון שלך.
                     </span>
                     <input
                       type="text"
                       className="common-input"
                       id="name"
-                      placeholder="First name"
+                      placeholder="שם פרטי"
                     />
                   </div>
                   <div className="mb-4">
@@ -48,16 +48,16 @@ const CartPersonal = () => {
                       htmlFor="lastName"
                       className="form-label font-18 mb-2 fw-500 font-heading"
                     >
-                      Last name <span className="text-danger">*</span>{" "}
+                      שם משפחה <span className="text-danger">*</span>{" "}
                     </label>
                     <span className="text d-block mb-2">
-                      We will use this to personalize your account experience.
+                      נשתמש בזה כדי להתאים אישית את חוויית החשבון שלך.
                     </span>
                     <input
                       type="text"
                       className="common-input"
                       id="lastName"
-                      placeholder="Last name"
+                      placeholder="שם משפחה"
                     />
                   </div>
                   <div className="mt-32 mb-32">
@@ -69,7 +69,7 @@ const CartPersonal = () => {
                         id="agree"
                       />
                       <label className="form-check-label mb-0" htmlFor="agree">
-                        Agree To Terms
+                        מסכים לתנאי השימוש
                       </label>
                     </div>
                     <div className="common-check mb-0">
@@ -80,7 +80,7 @@ const CartPersonal = () => {
                         id="privacy"
                       />
                       <label className="form-check-label mb-0" htmlFor="privacy">
-                        Agree To Privacy Policy
+                        מסכים למדיניות הפרטיות
                       </label>
                     </div>
                   </div>
@@ -90,14 +90,14 @@ const CartPersonal = () => {
                 <input
                   type="text"
                   className="common-input common-input--md w-auto pill"
-                  placeholder="Coupon code"
+                  placeholder="קוד קופון"
                 />
                 <button
                   type="submit"
                   className="btn btn-main btn-md py-3 px-sm-5 px-4 flx-align gap-2 pill fw-300"
                 >
                   {" "}
-                  Apply
+                  החל
                 </button>
               </form>
               <div className="cart-content__bottom flx-between gap-2">
@@ -106,44 +106,44 @@ const CartPersonal = () => {
                   className="btn btn-outline-light flx-align gap-2 pill btn-lg"
                 >
                   <span className="icon line-height-1 font-20">
-                    <i className="las la-arrow-left" />
+                    <i className="las la-arrow-right" />
                   </span>
-                  Back
+                  חזרה
                 </Link>
                 <Link scroll={false}
                   href="/cart-payment"
                   className="btn btn-main flx-align gap-2 pill btn-lg"
                 >
-                  Proceed To Payment
+                  המשך לתשלום
                 </Link>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="order-summary">
-                <h5 className="order-summary__title mb-32">Order Summary</h5>
+                <h5 className="order-summary__title mb-32">סיכום הזמנה</h5>
                 <ul className="billing-list">
                   <li className="billing-list__item flx-between">
-                    <span className="text text-heading fw-500">You have 3 items</span>
-                    <span className="amount text-heading fw-500">$259.00</span>
+                    <span className="text text-heading fw-500">יש לך 3 פריטים</span>
+                    <span className="amount text-heading fw-500">₪958</span>
                   </li>
                   <li className="billing-list__item flx-between">
-                    <span className="text text-heading fw-500">Discount</span>
-                    <span className="amount text-body">$00.00</span>
+                    <span className="text text-heading fw-500">הנחה</span>
+                    <span className="amount text-body">₪0</span>
                   </li>
                   <li className="billing-list__item flx-between">
-                    <span className="text text-heading fw-500">Handling Fee</span>
-                    <span className="amount text-body">$15.00</span>
+                    <span className="text text-heading fw-500">דמי טיפול</span>
+                    <span className="amount text-body">₪55</span>
                   </li>
                   <li className="billing-list__item flx-between">
-                    <span className="text text-heading fw-500">Subtotal</span>
-                    <span className="amount text-body">$15.00</span>
+                    <span className="text text-heading fw-500">סכום ביניים</span>
+                    <span className="amount text-body">₪55</span>
                   </li>
                   <li className="billing-list__item flx-between">
                     <span className="text text-heading font-20 fw-500 font-heading">
-                      Total
+                      סה״כ
                     </span>
                     <span className="amount text-heading font-20 fw-500 font-heading">
-                      $274.00
+                      ₪1,014
                     </span>
                   </li>
                 </ul>
@@ -163,7 +163,7 @@ const CartPersonal = () => {
                       className="dark-version"
                     />
                   </span>
-                  Purchased Now
+                  רכישה עכשיו
                 </button>
               </div>
             </div>

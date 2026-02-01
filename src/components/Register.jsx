@@ -22,7 +22,7 @@ const Register = () => {
             <div className="statistics animation bg-main text-center">
               <h5 className="statistics__amount text-white">50k</h5>
               <span className="statistics__text text-white font-14">
-                Customers
+                לקוחות
               </span>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Register = () => {
               />
             </Link>
             <h4 className="account-content__title mb-48 text-capitalize">
-              Create A Free Account
+              יצירת חשבון חינם
             </h4>
             <form action="#">
               <div className="row gy-4">
@@ -55,14 +55,14 @@ const Register = () => {
                     htmlFor="name"
                     className="form-label mb-2 font-18 font-heading fw-600"
                   >
-                    Full Name
+                    שם מלא
                   </label>
                   <div className="position-relative">
                     <input
                       type="text"
                       className="common-input common-input--bg common-input--withIcon"
                       id="name"
-                      placeholder="Your full name"
+                      placeholder="השם המלא שלך"
                     />
                     <span className="input-icon">
                       <img src="assets/images/icons/user-icon.svg" alt="" />
@@ -74,14 +74,14 @@ const Register = () => {
                     htmlFor="email"
                     className="form-label mb-2 font-18 font-heading fw-600"
                   >
-                    Email
+                    אימייל
                   </label>
                   <div className="position-relative">
                     <input
                       type="email"
                       className="common-input common-input--bg common-input--withIcon"
                       id="email"
-                      placeholder="infoname@mail.com"
+                      placeholder="your@email.com"
                     />
                     <span className="input-icon">
                       <img src="assets/images/icons/envelope-icon.svg" alt="" />
@@ -93,14 +93,14 @@ const Register = () => {
                     htmlFor="your-password"
                     className="form-label mb-2 font-18 font-heading fw-600"
                   >
-                    Password
+                    סיסמה
                   </label>
                   <div className="position-relative">
                     <input
                       type="password"
                       className="common-input common-input--bg common-input--withIcon"
                       id="your-password"
-                      placeholder="6+ characters, 1 Capital letter"
+                      placeholder="6+ תווים, אות גדולה אחת"
                     />
                     <span
                       className="input-icon toggle-password cursor-pointer"
@@ -122,7 +122,7 @@ const Register = () => {
                       className="form-check-label mb-0 fw-400 font-16 text-body"
                       htmlFor="agree"
                     >
-                      I agree to the terms &amp; conditions
+                      אני מסכים לתנאי השימוש
                     </label>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ const Register = () => {
                     className="btn btn-main btn-lg w-100 pill"
                   >
                     {" "}
-                    Create An Account
+                    יצירת חשבון
                   </button>
                 </div>
                 <div className="col-12">
@@ -143,18 +143,18 @@ const Register = () => {
                     <span className="icon icon-left">
                       <img src="assets/images/icons/google.svg" alt="" />
                     </span>
-                    Sign up with google
+                    הרשמה עם גוגל
                   </button>
                 </div>
                 <div className="col-sm-12 mb-0">
                   <div className="have-account">
                     <p className="text font-14">
-                      Already a member?{" "}
+                      כבר יש לך חשבון?{" "}
                       <Link scroll={false}
                         className="link text-main text-decoration-underline  fw-500"
                         href="/login"
                       >
-                        Login
+                        התחברות
                       </Link>
                     </p>
                   </div>

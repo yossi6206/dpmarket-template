@@ -13,7 +13,7 @@ const CartThankYou = () => {
             <div className="col-lg-6 col-md-8 col-sm-10">
               <div className="cart-thank__content text-center">
                 <h2 className="cart-thank__title mb-48">
-                  Thank you for purchased this products!!
+                  תודה על הרכישה שלך!!
                 </h2>
                 <div className="cart-thank__img">
                   <img src="assets/images/thumbs/thank-evenelope.png" alt="" />
@@ -26,35 +26,35 @@ const CartThankYou = () => {
               <div className="row gy-4">
                 <div className="col-lg-6">
                   <div className="thank-card">
-                    <h5 className="thank-card__title mb-3">Order Details</h5>
+                    <h5 className="thank-card__title mb-3">פרטי הזמנה</h5>
                     <ul className="list-text">
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500 font-heading fw-700 font-18">
-                          Order No.
+                          מס׳ הזמנה
                         </span>
                         <span className="text text-heading fw-500">#658907</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
-                        <span className="text text-heading fw-500">Order Status</span>
-                        <span className="text">$28.00</span>
+                        <span className="text text-heading fw-500">סטטוס הזמנה</span>
+                        <span className="text">אושר</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500">
-                          Payment Method:
+                          אמצעי תשלום:
                         </span>
-                        <span className="text">$28.00</span>
+                        <span className="text">כרטיס אשראי</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
-                        <span className="text text-heading fw-500">Date:</span>
-                        <span className="text">$28.00</span>
+                        <span className="text text-heading fw-500">תאריך:</span>
+                        <span className="text">01/02/2026</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
-                        <span className="text text-heading fw-500">Subtotal:</span>
-                        <span className="text">$28.00</span>
+                        <span className="text text-heading fw-500">סכום ביניים:</span>
+                        <span className="text">₪958</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
-                        <span className="text text-heading fw-500">Total</span>
-                        <span className="text">$28.00</span>
+                        <span className="text text-heading fw-500">סה״כ</span>
+                        <span className="text">₪1,014</span>
                       </li>
                     </ul>
                   </div>
@@ -62,46 +62,46 @@ const CartThankYou = () => {
                 <div className="col-lg-6">
                   <div className="thank-card">
                     <h5 className="thank-card__title mb-3">
-                      Products you have purchased
+                      המוצרים שרכשת
                     </h5>
                     <ul className="list-text">
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500 font-heading fw-700 font-18">
-                          Name
+                          שם
                         </span>
-                        <span className="text text-heading fw-500">Price</span>
+                        <span className="text text-heading fw-500">מחיר</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500">
-                          SaaS Landing Page
+                          דף נחיתה SaaS
                         </span>
-                        <span className="text">$28.00</span>
+                        <span className="text">₪103</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500">
-                          Project Management Dashboard{" "}
+                          לוח בקרה לניהול פרויקטים{" "}
                         </span>
-                        <span className="text">$28.00</span>
+                        <span className="text">₪103</span>
                       </li>
                       <li className="list-text__item flx-align flex-nowrap">
                         <span className="text text-heading fw-500">
-                          Consulting Agency Template
+                          תבנית סוכנות ייעוץ
                         </span>
-                        <span className="text">$28.00</span>
+                        <span className="text">₪103</span>
                       </li>
                     </ul>
                     <div className="thank-card__thumb mt-64 mb-3">
                       <img src="assets/images/thumbs/rating-img.png" alt="" />
                     </div>
                     <div className="flx-between gap-2">
-                      <p className="text">Please don’t forget to rating</p>
+                      <p className="text">אנא אל תשכח לדרג</p>
                       <Link scroll={false}
                         href="/"
                         className="btn btn-main flx-align gap-2 pill"
                       >
-                        Back To Home
+                        חזרה לדף הבית
                         <span className="icon line-height-1 font-20">
-                          <i className="las la-arrow-right" />
+                          <i className="las la-arrow-left" />
                         </span>
                       </Link>
                     </div>

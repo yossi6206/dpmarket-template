@@ -68,7 +68,7 @@ const CartPayment = () => {
         <section className="cart-payment padding-y-120 overflow-hidden">
             <div className="container container-two">
                 <div className="payment-method">
-                    <h5 className="payment-method__title mb-4">Payment Method</h5>
+                    <h5 className="payment-method__title mb-4">אמצעי תשלום</h5>
                     <div className="payment-method__slider arrow-sm">
                     <Slider {...settings}>
                         <div className="payment-method__item">
@@ -243,7 +243,7 @@ const CartPayment = () => {
                     />
                     <div className="row justify-content-center">
                         <div className="col-lg-8 col-sm-10">
-                            <h5 className="cart-payment__title mb-4">Card Details</h5>
+                            <h5 className="cart-payment__title mb-4">פרטי כרטיס</h5>
                             <div className="cart-payment-card">
                                 <form action="#">
                                     <div className="row gy-4">
@@ -252,14 +252,14 @@ const CartPayment = () => {
                                                 htmlFor="nmbr"
                                                 className="form-label mb-2 font-18 font-heading fw-600"
                                             >
-                                                Card Number
+                                                מספר כרטיס
                                             </label>
                                             <div className="position-relative">
                                                 <input
                                                     type="text"
                                                     className="common-input common-input--bg common-input--withIcon"
                                                     id="nmbr"
-                                                    placeholder="5896  1456  0040   2558"
+                                                    placeholder="5896  1456  0040  2558"
                                                 />
                                                 <span className="input-icon">
                                                     <img src="assets/images/icons/check-cirlce.svg" alt="" />
@@ -271,14 +271,14 @@ const CartPayment = () => {
                                                 htmlFor="holder"
                                                 className="form-label mb-2 font-18 font-heading fw-600"
                                             >
-                                                Card Holder
+                                                שם בעל הכרטיס
                                             </label>
                                             <div className="position-relative">
                                                 <input
                                                     type="text"
                                                     className="common-input common-input--bg common-input--withIcon"
                                                     id="holder"
-                                                    placeholder="Michel John"
+                                                    placeholder="ישראל ישראלי"
                                                 />
                                                 <span className="input-icon">
                                                     <img src="assets/images/icons/check-cirlce.svg" alt="" />
@@ -290,7 +290,7 @@ const CartPayment = () => {
                                                 htmlFor="expire"
                                                 className="form-label mb-2 font-18 font-heading fw-600"
                                             >
-                                                Expire Date
+                                                תוקף
                                             </label>
                                             <div className="position-relative">
                                                 <input
@@ -335,17 +335,17 @@ const CartPayment = () => {
                                                     className="form-check-label mb-0 fw-400 font-16 text-body"
                                                     htmlFor="agree"
                                                 >
-                                                    Save my details for future purchase
+                                                    שמור את הפרטים לרכישות עתידיות
                                                 </label>
                                             </div>
                                         </div>
                                         <div className="col-lg-12">
                                             <div className="total-bill flx-between">
                                                 <span className="text text-heading font-20 fw-500 font-heading">
-                                                    Total Amount
+                                                    סה״כ לתשלום
                                                 </span>
                                                 <span className="amount text-heading font-20 fw-500 font-heading">
-                                                    $274.00
+                                                    ₪1,014
                                                 </span>
                                             </div>
                                         </div>
@@ -355,7 +355,7 @@ const CartPayment = () => {
                                                 className="btn btn-main btn-lg w-100 pill"
                                             >
                                                 {" "}
-                                                Confirm Payment
+                                                אישור תשלום
                                             </Link>
                                         </div>
                                     </div>
@@ -370,9 +370,9 @@ const CartPayment = () => {
                         className="btn btn-outline-light flx-align gap-2 pill btn-lg"
                     >
                         <span className="icon line-height-1 font-20">
-                            <i className="las la-arrow-left" />
+                            <i className="las la-arrow-right" />
                         </span>
-                        Back
+                        חזרה
                     </Link>
                 </div>
             </div>
