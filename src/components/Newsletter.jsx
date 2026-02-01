@@ -36,10 +36,10 @@ const Newsletter = () => {
           <div className="col-xl-6 col-lg-8 col-md-10">
             <div className="newsletter-content">
               <h3 className="newsletter-content__title text-white mb-2 text-center">
-                Get update Newsletter
+                הירשמו לניוזלטר שלנו
               </h3>
               <p className="newsletter-content__desc pb-2 text-white text-center font-18 fw-300">
-                Subscribe our newsletter to get the latest news
+                הירשמו לניוזלטר שלנו כדי לקבל את החדשות האחרונות
               </p>
               <form
                 action="#"
@@ -48,13 +48,13 @@ const Newsletter = () => {
                 <input
                   type="text"
                   className="form-control common-input common-input--lg pill text-white"
-                  placeholder="Enter Mail"
+                  placeholder="הזינו את כתובת המייל"
                 />
                 <button
                   type="submit"
                   className="btn btn-main btn-lg pill flx-align gap-1"
                 >
-                  Subscribe <span className="text d-sm-flex d-none">Now</span>
+                  הרשמה <span className="text d-sm-flex d-none">עכשיו</span>
                 </button>
               </form>
             </div>

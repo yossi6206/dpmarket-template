@@ -1,0 +1,379 @@
+// RTL (Right-to-Left) Support for Hebrew
+// =========================================
+
+[dir="rtl"] {
+  // Text alignment
+  text-align: right;
+
+  // Flip margins and paddings
+  .ms-auto {
+    margin-left: unset !important;
+    margin-right: auto !important;
+  }
+
+  .me-auto {
+    margin-right: unset !important;
+    margin-left: auto !important;
+  }
+
+  .ms-1, .ms-2, .ms-3, .ms-4, .ms-5 {
+    margin-left: unset !important;
+  }
+
+  .me-1, .me-2, .me-3, .me-4, .me-5 {
+    margin-right: unset !important;
+  }
+
+  .ps-1, .ps-2, .ps-3, .ps-4, .ps-5 {
+    padding-left: unset !important;
+  }
+
+  .pe-1, .pe-2, .pe-3, .pe-4, .pe-5 {
+    padding-right: unset !important;
+  }
+
+  // Flip start/end positioning
+  .start-0 {
+    left: unset !important;
+    right: 0 !important;
+  }
+
+  .end-0 {
+    right: unset !important;
+    left: 0 !important;
+  }
+
+  // Text alignment overrides
+  .text-start {
+    text-align: right !important;
+  }
+
+  .text-end {
+    text-align: left !important;
+  }
+
+  // Header specific RTL
+  .header-inner {
+    flex-direction: row-reverse;
+  }
+
+  .header-menu .nav-menu {
+    flex-direction: row-reverse;
+  }
+
+  .header-right {
+    flex-direction: row-reverse;
+  }
+
+  .nav-menu__item .nav-submenu {
+    left: unset;
+    right: 0;
+  }
+
+  // Flip icons with directional meaning
+  .icon-left {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+
+  .icon-right {
+    margin-right: 8px;
+    margin-left: 0;
+  }
+
+  // Search box
+  .search-box {
+    direction: rtl;
+    
+    input {
+      text-align: right;
+      padding-right: 20px;
+      padding-left: 50px;
+    }
+
+    button[type="submit"] {
+      right: unset;
+      left: 5px;
+    }
+  }
+
+  .search-box__select {
+    border-left: none;
+    border-right: 1px solid var(--border-color);
+  }
+
+  // Popular search
+  .popular-search {
+    flex-direction: row-reverse;
+  }
+
+  .search-list {
+    direction: rtl;
+  }
+
+  // Statistics wrapper
+  .statistics-wrapper {
+    &.style-right {
+      text-align: left;
+    }
+  }
+
+  // Footer RTL
+  .footer-widget {
+    text-align: right;
+  }
+
+  .footer-widget__list li {
+    text-align: right;
+  }
+
+  .social-list {
+    justify-content: flex-start;
+  }
+
+  // Cards and product items
+  .product-card {
+    text-align: right;
+  }
+
+  .product-card__content {
+    text-align: right;
+  }
+
+  // Breadcrumb
+  .breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: 0.5rem;
+    padding-right: 0;
+  }
+
+  // Form elements
+  .form-control,
+  .form-select,
+  input,
+  textarea {
+    text-align: right;
+  }
+
+  // Checkbox and radio labels
+  .form-check {
+    padding-left: 0;
+    padding-right: 1.5em;
+  }
+
+  .form-check-input {
+    float: right;
+    margin-left: 0;
+    margin-right: -1.5em;
+  }
+
+  // Lists
+  ul, ol {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  // Dropdown menus
+  .dropdown-menu {
+    text-align: right;
+  }
+
+  // Buttons with icons
+  .btn .icon-left {
+    margin-left: 8px;
+    margin-right: 0;
+  }
+
+  .btn .icon-right {
+    margin-right: 8px;
+    margin-left: 0;
+  }
+
+  // Card layouts
+  .flx-between {
+    flex-direction: row-reverse;
+  }
+
+  // Section headings
+  .section-heading {
+    text-align: right;
+  }
+
+  .section-heading--center {
+    text-align: center;
+  }
+
+  // Sale offer bar
+  .sale-offer {
+    direction: rtl;
+  }
+
+  // Mobile menu
+  .mobile-menu {
+    right: unset;
+    left: 0;
+    transform: translateX(-100%);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  .close-button {
+    right: unset;
+    left: 20px;
+  }
+
+  // Slick slider arrows
+  .slick-prev {
+    right: unset;
+    left: -25px;
+  }
+
+  .slick-next {
+    left: unset;
+    right: -25px;
+  }
+
+  // Blog cards
+  .blog-card {
+    text-align: right;
+  }
+
+  // Service cards
+  .service-item {
+    text-align: right;
+  }
+
+  // Pricing cards
+  .pricing-plan {
+    text-align: right;
+  }
+
+  .pricing-plan__list {
+    text-align: right;
+    
+    li {
+      padding-left: 0;
+      padding-right: 25px;
+
+      &::before {
+        left: unset;
+        right: 0;
+      }
+    }
+  }
+
+  // Testimonial
+  .testimonial-item {
+    text-align: right;
+  }
+
+  // Dashboard sidebar
+  .dashboard-sidebar {
+    right: 0;
+    left: unset;
+  }
+
+  .dashboard-body {
+    margin-left: 0;
+    margin-right: 280px;
+  }
+
+  // Profile page
+  .profile-info {
+    text-align: right;
+  }
+
+  // Cart
+  .cart-item {
+    text-align: right;
+  }
+
+  // Contact
+  .contact-info {
+    text-align: right;
+  }
+
+  // Newsletter
+  .newsletter {
+    text-align: right;
+  }
+
+  // Resource section
+  .resource-card {
+    text-align: right;
+  }
+
+  // Seller section
+  .seller-item {
+    text-align: right;
+  }
+
+  // Brand section
+  .brand-item {
+    text-align: right;
+  }
+
+  // Flex alignment adjustments
+  .gap-1, .gap-2, .gap-3, .gap-4, .gap-5 {
+    direction: rtl;
+  }
+
+  // Language select
+  .language-select {
+    direction: ltr; // Keep language dropdown LTR
+  }
+
+  // Specific component overrides
+  .flx-align {
+    &.justify-content-between {
+      flex-direction: row-reverse;
+    }
+  }
+
+  // Product details
+  .product-details {
+    text-align: right;
+  }
+
+  // Account pages
+  .account-form {
+    text-align: right;
+  }
+
+  // Star rating
+  .star-rating {
+    direction: ltr; // Keep stars LTR
+  }
+
+  // Quantity controls
+  .quantity-control {
+    direction: ltr;
+  }
+
+  // Banner two specific
+  .banner-two__content {
+    text-align: center;
+  }
+
+  // Keep certain elements LTR
+  .phone-number,
+  .price,
+  .counter,
+  .statistics__amount {
+    direction: ltr;
+    display: inline-block;
+  }
+}
+
+// Hebrew font support
+[lang="he"] {
+  font-family: 'Heebo', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  body,
+  h1, h2, h3, h4, h5, h6,
+  p, span, a, li, label, input, textarea, button, select {
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}

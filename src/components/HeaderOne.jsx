@@ -74,29 +74,24 @@ const HeaderOne = () => {
               <ul className="nav-menu flx-align">
                 <li className="nav-menu__item has-submenu">
                   <Link scroll={false} href="#" className="nav-menu__link">
-                    Home
+                    דף הבית
                   </Link>
                   <ul className="nav-submenu">
                     <li className={`nav-submenu__item ${pathname == "/" && "activePage"}`}>
                       <Link scroll={false} href="/" className="nav-submenu__link">
-                        Home One
-                      </Link>
-                    </li>
-                    <li className={`nav-submenu__item ${pathname == "/index-two" && "activePage"}`}>
-                      <Link scroll={false} href="/index-two" className="nav-submenu__link">
-                        Home Two
+                        דף הבית
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-menu__item has-submenu">
                   <Link scroll={false} href="#" className="nav-menu__link">
-                    Products
+                    מוצרים
                   </Link>
                   <ul className="nav-submenu">
                   <li className={`nav-submenu__item ${pathname == "/all-product" && "activePage"}`}>
                       <Link scroll={false} href="/all-product" className="nav-submenu__link">
-                        All Products
+                        כל המוצרים
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/product-details" && "activePage"}`}>
@@ -104,24 +99,24 @@ const HeaderOne = () => {
                         href="/product-details"
                         className="nav-submenu__link"
                       >
-                        Product Details
+                        פרטי מוצר
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-menu__item has-submenu">
                   <Link scroll={false} href="#" className="nav-menu__link">
-                    Pages
+                    עמודים
                   </Link>
                   <ul className="nav-submenu">
                   <li className={`nav-submenu__item ${pathname == "/profile" && "activePage"}`}>
                       <Link scroll={false} href="/profile" className="nav-submenu__link">
-                        Profile
+                        פרופיל
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/cart" && "activePage"}`}>
                       <Link scroll={false} href="/cart" className="nav-submenu__link">
-                        Shopping Cart
+                        עגלת קניות
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/cart-personal" && "activePage"}`}>
@@ -129,12 +124,12 @@ const HeaderOne = () => {
                         href="/cart-personal"
                         className="nav-submenu__link"
                       >
-                        Mailing Address
+                        כתובת למשלוח
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/cart-payment" && "activePage"}`}>
                       <Link scroll={false} href="/cart-payment" className="nav-submenu__link">
-                        Payment Method
+                        אמצעי תשלום
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/cart-thank-you" && "activePage"}`}>
@@ -142,30 +137,30 @@ const HeaderOne = () => {
                         href="/cart-thank-you"
                         className="nav-submenu__link"
                       >
-                        Preview Order
+                        תצוגת הזמנה
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/dashboard" && "activePage"}`}>
                       <Link scroll={false} href="/dashboard" className="nav-submenu__link">
-                        Dashboard
+                        לוח בקרה
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-menu__item has-submenu">
                   <Link scroll={false} href="#" className="nav-menu__link">
-                    Blog
+                    בלוג
                   </Link>
                   <ul className="nav-submenu">
                   <li className={`nav-submenu__item ${pathname == "/blog" && "activePage"}`}>
                       <Link scroll={false} href="/blog" className="nav-submenu__link">
                         {" "}
-                        Blog
+                        בלוג
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/blog-details" && "activePage"}`}>
                       <Link scroll={false} href="/blog-details" className="nav-submenu__link">
-                        Blog Details
+                        פרטי מאמר
                       </Link>
                     </li>
                     <li className={`nav-submenu__item ${pathname == "/blog-details-sidebar" && "activePage"}`}>
@@ -173,7 +168,7 @@ const HeaderOne = () => {
                         href="/blog-details-sidebar"
                         className="nav-submenu__link"
                       >
-                        Blog Details Sidebar
+                        מאמר עם סרגל צד
                       </Link>
                     </li>
                   </ul>
@@ -181,7 +176,7 @@ const HeaderOne = () => {
              
                 <li className={`nav-menu__item ${pathname == "/contact" && "activePage"}`}>
                   <Link scroll={false} href="/contact" className="nav-menu__link">
-                    Contact
+                    צור קשר
                   </Link>
                 </li>
               </ul>
@@ -213,7 +208,7 @@ const HeaderOne = () => {
                   <span className="icon-left icon">
                     <img src="assets/images/icons/user.svg" alt="" />{" "}
                   </span>
-                  Create Account
+                  הרשמה
                 </Link>
                 <div className="language-select flx-align select-has-icon">
                   <img
@@ -227,10 +222,8 @@ const HeaderOne = () => {
                     className="globe-icon dark-version"
                   />
                   <select className="select py-0 ps-2 border-0 fw-500" defaultValue={1}>
-                    <option value={1}>Eng</option>
-                    <option value={2}>Bn</option>
-                    <option value={3}>Eur</option>
-                    <option value={4}>Urd</option>
+                    <option value={1}>עברית</option>
+                    <option value={2}>English</option>
                   </select>
                 </div>
               </div>
@@ -272,30 +265,25 @@ const HeaderOne = () => {
             >
               <li className="nav-menu__item has-submenu ">
                 <Link scroll={false} href="#" className="nav-menu__link">
-                  Home
+                  דף הבית
                 </Link>
                 <ul className="nav-submenu">
                   <li className={`nav-submenu__item ${pathname == "/" && "activePage"}`}>
                     <Link scroll={false} href="/" className="nav-submenu__link">
                       {" "}
-                      Home One
-                    </Link>
-                  </li>
-                  <li className={`nav-submenu__item ${pathname == "/index-two" && "activePage"}`}>
-                    <Link scroll={false} href="/index-two" className="nav-submenu__link">
-                      Home Two
+                      דף הבית
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-menu__item has-submenu">
                 <Link scroll={false} href="#" className="nav-menu__link">
-                  Products
+                  מוצרים
                 </Link>
                 <ul className="nav-submenu">
                 <li className={`nav-submenu__item ${pathname == "/all-product" && "activePage"}`}>
                     <Link scroll={false} href="/all-product" className="nav-submenu__link">
-                      All Products
+                      כל המוצרים
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/product-details" && "activePage"}`}>
@@ -303,63 +291,63 @@ const HeaderOne = () => {
                       href="/product-details"
                       className="nav-submenu__link"
                     >
-                      Product Details
+                      פרטי מוצר
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-menu__item has-submenu">
                 <Link scroll={false} href="#" className="nav-menu__link">
-                  Pages
+                  עמודים
                 </Link>
                 <ul className="nav-submenu">
                 <li className={`nav-submenu__item ${pathname == "/profile" && "activePage"}`}>
                     <Link scroll={false} href="/profile" className="nav-submenu__link">
                       {" "}
-                      Profile
+                      פרופיל
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/cart" && "activePage"}`}>
                     <Link scroll={false} href="/cart" className="nav-submenu__link">
-                      Shopping Cart
+                      עגלת קניות
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/cart-personal" && "activePage"}`}>
                     <Link scroll={false} href="/cart-personal" className="nav-submenu__link">
-                      Mailing Address
+                      כתובת למשלוח
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/cart-payment" && "activePage"}`}>
                     <Link scroll={false} href="/cart-payment" className="nav-submenu__link">
-                      Payment Method
+                      אמצעי תשלום
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/cart-thank-you" && "activePage"}`}>
                     <Link scroll={false} href="/cart-thank-you" className="nav-submenu__link">
-                      Preview Order
+                      תצוגת הזמנה
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/dashboard" && "activePage"}`}>
                     <Link scroll={false} href="/dashboard" className="nav-submenu__link">
-                      Dashboard
+                      לוח בקרה
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-menu__item has-submenu">
                 <Link scroll={false} href="#" className="nav-menu__link">
-                  Blog
+                  בלוג
                 </Link>
                 <ul className="nav-submenu">
                 <li className={`nav-submenu__item ${pathname == "/blog" && "activePage"}`}>
                     <Link scroll={false} href="/blog" className="nav-submenu__link">
                       {" "}
-                      Blog
+                      בלוג
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/blog-details" && "activePage"}`}>
                     <Link scroll={false} href="/blog-details" className="nav-submenu__link">
-                      Blog Details
+                      פרטי מאמר
                     </Link>
                   </li>
                   <li className={`nav-submenu__item ${pathname == "/blog-details-sidebar" && "activePage"}`}>
@@ -367,14 +355,14 @@ const HeaderOne = () => {
                       href="/blog-details-sidebar"
                       className="nav-submenu__link"
                     >
-                      Blog Details Sidebar
+                      מאמר עם סרגל צד
                     </Link>
                   </li>
                 </ul>
               </li>
               <li className={`nav-menu__item ${pathname == "/contact" && "activePage"}`}>
                 <Link scroll={false} href="/contact" className="nav-menu__link">
-                  Contact
+                  צור קשר
                 </Link>
               </li>
             </ul>
@@ -383,7 +371,7 @@ const HeaderOne = () => {
                 <span className="icon-left icon">
                   <img src="assets/images/icons/user.svg" alt="" />{" "}
                 </span>
-                Create Account
+                הרשמה
               </Link>
               <div className="language-select flx-align select-has-icon">
                 <img
@@ -397,10 +385,8 @@ const HeaderOne = () => {
                   className="globe-icon dark-version"
                 />
                 <select className="select py-0 ps-2 border-0 fw-500" defaultValue={1}>
-                  <option value={1}>Eng</option>
-                  <option value={2}>Bn</option>
-                  <option value={3}>Eur</option>
-                  <option value={4}>Urd</option>
+                  <option value={1}>עברית</option>
+                  <option value={2}>English</option>
                 </select>
               </div>
             </div>
