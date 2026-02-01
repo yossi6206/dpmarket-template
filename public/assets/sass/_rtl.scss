@@ -132,11 +132,20 @@
 
   // Popular search
   .popular-search {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
+    justify-content: center !important;
   }
 
   .search-list {
-    direction: rtl;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    gap: 8px;
+  }
+  
+  .search-list__item {
+    order: unset;
   }
 
   // Statistics wrapper
