@@ -95,18 +95,17 @@ const SellingTwo = () => {
       <div className="container container-two">
         <div className="section-heading style-left style-white flx-between max-w-unset gap-4">
           <div>
-            <h3 className="section-heading__title">Featured Products</h3>
+            <h3 className="section-heading__title">מוצרים מובילים</h3>
             <p className="section-heading__desc font-18">
-              Every month we pick some best products for you. This month's best
-              web themes &amp; templates have arrived, chosen by our content
-              specialists.
+              בכל חודש אנו בוחרים עבורכם את המוצרים הטובים ביותר. התבניות והעיצובים 
+              המובילים של החודש הגיעו, נבחרו על ידי מומחי התוכן שלנו.
             </p>
           </div>
           <Link scroll={false}
             href="/all-product"
             className="btn btn-main btn-lg pill fw-300"
           >
-            View All Items
+            צפה בכל המוצרים
           </Link>
         </div>
         <div className="selling-product-slider">
@@ -124,17 +123,17 @@ const SellingTwo = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    Title here digital products new marketplace theme
+                    תבנית מרקטפלייס למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
                   <span className="product-item__author">
-                    by
+                    מאת
                     <Link scroll={false}
                       href="profile"
                       className="link hover-text-decoration-underline"
                     >
-                      themepix
+                      {" "}themepix
                     </Link>
                   </span>
                   <div className="flx-align gap-2">
@@ -147,7 +146,7 @@ const SellingTwo = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -189,7 +188,7 @@ const SellingTwo = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      תצוגה מקדימה
                     </Link>
                   </div>
                 </div>
@@ -208,17 +207,17 @@ const SellingTwo = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    Title here digital products new marketplace theme
+                    תבנית מרקטפלייס למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
                   <span className="product-item__author">
-                    by
+                    מאת
                     <Link scroll={false}
                       href="profile"
                       className="link hover-text-decoration-underline"
                     >
-                      themepix
+                      {" "}themepix
                     </Link>
                   </span>
                   <div className="flx-align gap-2">
@@ -231,7 +230,7 @@ const SellingTwo = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -273,7 +272,7 @@ const SellingTwo = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      תצוגה מקדימה
                     </Link>
                   </div>
                 </div>
@@ -292,17 +291,17 @@ const SellingTwo = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    Title here digital products new marketplace theme
+                    תבנית מרקטפלייס למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
                   <span className="product-item__author">
-                    by
+                    מאת
                     <Link scroll={false}
                       href="profile"
                       className="link hover-text-decoration-underline"
                     >
-                      themepix
+                      {" "}themepix
                     </Link>
                   </span>
                   <div className="flx-align gap-2">
@@ -315,7 +314,7 @@ const SellingTwo = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -357,7 +356,7 @@ const SellingTwo = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      תצוגה מקדימה
                     </Link>
                   </div>
                 </div>
@@ -376,17 +375,17 @@ const SellingTwo = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    Title here digital products new marketplace theme
+                    תבנית מרקטפלייס למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
                   <span className="product-item__author">
-                    by
+                    מאת
                     <Link scroll={false}
                       href="profile"
                       className="link hover-text-decoration-underline"
                     >
-                      themepix
+                      {" "}themepix
                     </Link>
                   </span>
                   <div className="flx-align gap-2">
@@ -399,7 +398,7 @@ const SellingTwo = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -441,7 +440,7 @@ const SellingTwo = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      תצוגה מקדימה
                     </Link>
                   </div>
                 </div>

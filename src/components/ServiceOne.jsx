@@ -16,15 +16,14 @@ const ServiceOne = () => {
       <div className="container container-two">
         <div className="section-heading style-left style-flex flx-between align-items-end gap-3">
           <div className="section-heading__inner w-lg">
-            <h3 className="section-heading__title">Best services we provide</h3>
+            <h3 className="section-heading__title">השירותים הטובים שלנו</h3>
             <p className="section-heading__desc">
-              Every month we pick some best products for you. This month's best
-              web themes &amp; templates have arrived, chosen by our content
-              specialists.
+              בכל חודש אנו בוחרים עבורכם את המוצרים הטובים ביותר. התבניות והעיצובים 
+              המובילים של החודש הגיעו, נבחרו על ידי מומחי התוכן שלנו.
             </p>
           </div>
           <Link scroll={false} href="#" className="btn btn-main btn-lg pill">
-            See All Services
+            צפה בכל השירותים
           </Link>
         </div>
         <div className="row gy-4">
@@ -44,16 +43,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon1.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Website Design &amp; Development
+                עיצוב ופיתוח אתרים
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>
@@ -74,16 +73,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon2.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Management Systems Development
+                פיתוח מערכות ניהול
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>
@@ -104,16 +103,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon3.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Digital Marketing &amp; Video Editing
+                שיווק דיגיטלי ועריכת וידאו
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>
@@ -134,16 +133,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon4.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Graphic Design &amp; UI/UX
+                עיצוב גרפי ו-UI/UX
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>
@@ -164,16 +163,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon5.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Blockchain Crypto web3 Development
+                פיתוח בלוקצ'יין וקריפטו
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>
@@ -194,16 +193,16 @@ const ServiceOne = () => {
                 <img src="assets/images/icons/service-icon6.svg" alt="" />
               </span>
               <h5 className="service-item__title my-3">
-                Content Creation &amp; SEO
+                יצירת תוכן וקידום אתרים
               </h5>
               <p className="service-item__desc">
-                We help companies communicate with customers more effectively
-                and efficiently. Help is a conversational customer support.
+                אנו עוזרים לחברות לתקשר עם לקוחות בצורה יעילה ואפקטיבית יותר. 
+                תמיכה בשירות לקוחות ברמה הגבוהה ביותר.
               </p>
               <Link scroll={false} href="#" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>

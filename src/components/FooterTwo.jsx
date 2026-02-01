@@ -38,8 +38,8 @@ const FooterTwo = () => {
                   </Link>
                 </div>
                 <p className="footer-widget__desc">
-                  Lorem consultancy elitsed do eiusmod tempor inci didunt ut
-                  labore dolore magna aliqua sed do eiusmod.
+                  השוק המוביל למוצרים דיגיטליים. אנו מציעים מגוון רחב של תבניות, 
+                  עיצובים ותוספים באיכות הגבוהה ביותר.
                 </p>
                 <div className="footer-widget__social">
                   <ul className="social-icon-list">
@@ -89,11 +89,11 @@ const FooterTwo = () => {
             </div>
             <div className="col-xl-2 col-sm-6 col-xs-6">
               <div className="footer-widget">
-                <h5 className="footer-widget__title">Useful Link</h5>
+                <h5 className="footer-widget__title">קישורים שימושיים</h5>
                 <ul className="footer-lists">
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/all-product" className="footer-lists__link">
-                      Product
+                      מוצרים
                     </Link>
                   </li>
                   <li className="footer-lists__item">
@@ -101,22 +101,22 @@ const FooterTwo = () => {
                       href="/product-details"
                       className="footer-lists__link"
                     >
-                      Product Details
+                      פרטי מוצר
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/profile" className="footer-lists__link">
-                      Profile
+                      פרופיל
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/cart" className="footer-lists__link">
-                      Shopping Cart
+                      עגלת קניות
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/dashboard" className="footer-lists__link">
-                      Dashboard
+                      לוח בקרה
                     </Link>
                   </li>
                 </ul>
@@ -125,31 +125,31 @@ const FooterTwo = () => {
             <div className="col-xl-1 d-xl-block d-none" />
             <div className="col-xl-3 col-sm-6 col-xs-6">
               <div className="footer-widget">
-                <h5 className="footer-widget__title">Quick Links</h5>
+                <h5 className="footer-widget__title">קישורים מהירים</h5>
                 <ul className="footer-lists">
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/dashboard" className="footer-lists__link">
-                      Dashboard
+                      לוח בקרה
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/login" className="footer-lists__link">
-                      Login{" "}
+                      התחברות{" "}
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/register" className="footer-lists__link">
-                      Register
+                      הרשמה
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/blog" className="footer-lists__link">
-                      Blog{" "}
+                      בלוג{" "}
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/blog-details" className="footer-lists__link">
-                      Blog Details
+                      פרטי מאמר
                     </Link>
                   </li>
                 </ul>
@@ -157,7 +157,7 @@ const FooterTwo = () => {
             </div>
             <div className="col-xl-3 col-sm-6 col-xs-6">
               <div className="footer-widget">
-                <h5 className="footer-widget__title">Categoreis</h5>
+                <h5 className="footer-widget__title">קטגוריות</h5>
                 <ul className="footer-lists">
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/all-product" className="footer-lists__link">
@@ -195,17 +195,17 @@ const FooterTwo = () => {
         <div className="container container-two">
           <div className="bottom-footer__inner flx-between gap-3">
             <p className="bottom-footer__text font-14">
-              Copyright © 2024 DPmarket, All rights reserved.
+              כל הזכויות שמורות © 2024 DPmarket
             </p>
             <div className="footer-links">
               <Link scroll={false} href="#" className="footer-link font-14">
-                Terms of service
+                תנאי שימוש
               </Link>
               <Link scroll={false} href="#" className="footer-link font-14">
-                Privacy Policy
+                מדיניות פרטיות
               </Link>
               <Link scroll={false} href="/contact" className="footer-link font-14">
-                cookies
+                עוגיות
               </Link>
             </div>
           </div>

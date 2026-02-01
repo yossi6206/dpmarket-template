@@ -47,13 +47,13 @@ const BannerTwo = () => {
                   <h5 className="statistics__amount statistics__amount-two text-heading">
                     85,000+
                   </h5>
-                  <span className="statistics__text">Active Members</span>
+                  <span className="statistics__text">משתמשים פעילים</span>
                 </div>
                 <div className="statistics style-three position-relative start-0 top-0 bg-white text-center">
                   <h5 className="statistics__amount statistics__amount-two text-heading">
-                    5+ Million
+                    5+ מיליון
                   </h5>
-                  <span className="statistics__text">Total Download</span>
+                  <span className="statistics__text">הורדות</span>
                 </div>
               </div>
             </div>
@@ -61,18 +61,17 @@ const BannerTwo = () => {
           <div className="col-xl-6">
             <div className="banner-two__content">
               <h1 className="banner-two__title text-center mb-3">
-                858,990+ curated assets for download
+                858,990+ מוצרים דיגיטליים להורדה
               </h1>
               <p className="banner-two__desc text-center">
-                Lorem ipsum dolor sit amet consectetur. Arcu vestibulum dictumst
-                fermentum rhoncus. Velit dui a lorem in sagittis nisl lectus
-                diam.
+                גלו את המגוון הרחב של מוצרים דיגיטליים איכותיים. תבניות, עיצובים, 
+                תוספים ועוד - הכל במקום אחד במחירים משתלמים.
               </p>
               <form action="#" className="search-box style-two">
                 <div className="search-box__select select-has-icon">
                   <select className="form-control form-control py-0 border-0 bg-transparent" defaultValue={1}>
                     <option value={1}  disabled="">
-                      All Categories
+                      כל הקטגוריות
                     </option>
                     <option value={2}>WordPress</option>
                     <option value={3}>Laravel</option>
@@ -85,7 +84,7 @@ const BannerTwo = () => {
                 <input
                   type="text"
                   className="common-input common-input--lg pill shadow-sm"
-                  placeholder="Search theme, plugins & more..."
+                  placeholder="חפש תבניות, תוספים ועוד..."
                 />
                 <button
                   type="submit"
@@ -96,7 +95,7 @@ const BannerTwo = () => {
               </form>
               <div className="popular-search d-flex align-items-start gap-3 justify-content-center">
                 <h6 className="popular-search__title font-18 fw-700 mb-0 mt-1 flex-shrink-0 flx-align gap-1">
-                  <span className="d-md-flex d-none">Popular</span> Search:
+                  <span className="d-md-flex d-none">חיפושים</span> פופולריים:
                 </h6>
                 <ul className="search-list">
                   <li className="search-list__item">
@@ -104,7 +103,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      theme
+                      תבניות
                     </Link>
                   </li>
                   <li className="search-list__item">
@@ -112,7 +111,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      plugins
+                      תוספים
                     </Link>
                   </li>
                   <li className="search-list__item">
@@ -120,7 +119,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      ui template
+                      עיצוב UI
                     </Link>
                   </li>
                   <li className="search-list__item">
@@ -128,7 +127,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      mobile app
+                      אפליקציות
                     </Link>
                   </li>
                   <li className="search-list__item">
@@ -136,7 +135,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      html template
+                      תבניות HTML
                     </Link>
                   </li>
                   <li className="search-list__item">
@@ -144,7 +143,7 @@ const BannerTwo = () => {
                       href="/all-product"
                       className="search-list__link font-14 text-heading"
                     >
-                      dashboard
+                      לוחות בקרה
                     </Link>
                   </li>
                 </ul>
@@ -168,13 +167,13 @@ const BannerTwo = () => {
                   <h5 className="statistics__amount statistics__amount-two text-heading">
                     35k+
                   </h5>
-                  <span className="statistics__text">Themes and Plugin</span>
+                  <span className="statistics__text">תבניות ותוספים</span>
                 </div>
                 <div className="statistics style-three position-relative start-0 top-0 bg-white text-center">
                   <h5 className="statistics__amount statistics__amount-two text-heading">
                     24/7
                   </h5>
-                  <span className="statistics__text">Customer Support</span>
+                  <span className="statistics__text">תמיכת לקוחות</span>
                 </div>
               </div>
             </div>
