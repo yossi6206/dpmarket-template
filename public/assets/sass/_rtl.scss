@@ -232,10 +232,26 @@
   // Section headings
   .section-heading {
     text-align: right;
+    
+    &.style-left {
+      &.flx-between {
+        flex-direction: row-reverse !important;
+      }
+    }
+    
+    &__title,
+    &__desc {
+      text-align: right !important;
+    }
   }
 
   .section-heading--center {
     text-align: center;
+  }
+  
+  // Flex between for RTL
+  .flx-between {
+    flex-direction: row-reverse !important;
   }
 
   // Sale offer bar
