@@ -25,18 +25,16 @@ const BannerOne = () => {
               <div className="hero-inner position-relative pe-lg-5">
                 <div>
                   <h1 className="hero-inner__title">
-                    2M+ curated digital products
+                    2 מיליון+ מוצרים דיגיטליים נבחרים
                   </h1>
                   <p className="hero-inner__desc font-18">
-                    Explore the best premium themes and plugins available for
-                    sale. Our unique collection is hand-curated by experts. Find
-                    and buy the perfect premium theme today.
+                    גלו את ערכות הנושא והתוספים הטובים ביותר למכירה. האוסף הייחודי שלנו נבחר בקפידה על ידי מומחים. מצאו וקנו את ערכת הנושא המושלמת היום.
                   </p>
                   <div className="search-box">
                     <input
                       type="text"
                       className="common-input common-input--lg pill shadow-sm"
-                      placeholder="Search theme, plugins & more..."
+                      placeholder="חפש ערכות נושא, תוספים ועוד..."
                     />
                     <button
                       type="submit"

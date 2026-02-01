@@ -34,8 +34,7 @@ const FooterOne = () => {
                   </Link>
                 </div>
                 <p className="footer-widget__desc">
-                  Lorem consultancy elitsed do eiusmod tempor inci didunt ut
-                  labore dolore magna aliqua sed do eiusmod.
+                  השוק המקוון הטוב ביותר למוצרים דיגיטליים איכותיים. גלו מגוון רחב של תבניות, ערכות נושא ועוד.
                 </p>
                 <div className="footer-widget__social">
                   <ul className="social-icon-list">
@@ -85,7 +84,7 @@ const FooterOne = () => {
             </div>
             <div className="col-xl-2 col-sm-6 col-xs-6">
               <div className="footer-widget">
-                <h5 className="footer-widget__title text-white">Useful Link</h5>
+                <h5 className="footer-widget__title text-white">קישורים שימושיים</h5>
                 <ul className="footer-lists">
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/all-product" className="footer-lists__link">
@@ -97,22 +96,22 @@ const FooterOne = () => {
                       href="/product-details"
                       className="footer-lists__link"
                     >
-                      Product Details
+                      פרטי המוצר
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/profile" className="footer-lists__link">
-                      Profile
+                      פרופיל
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/cart" className="footer-lists__link">
-                      Shopping Cart
+                      עגלת קניות
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/dashboard" className="footer-lists__link">
-                      Dashboard
+                      לוח בקרה
                     </Link>
                   </li>
                 </ul>
@@ -120,31 +119,31 @@ const FooterOne = () => {
             </div>
             <div className="col-xl-3 col-sm-6 col-xs-6 ps-xl-5">
               <div className="footer-widget">
-                <h5 className="footer-widget__title text-white">Quick Links</h5>
+                <h5 className="footer-widget__title text-white">קישורים מהירים</h5>
                 <ul className="footer-lists">
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/dashboard" className="footer-lists__link">
-                      Dashboard
+                      לוח בקרה
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/login" className="footer-lists__link">
-                      Login{" "}
+                      התחברות{" "}
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/register" className="footer-lists__link">
-                      Register
+                      הרשמה
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/blog" className="footer-lists__link">
-                      Blog{" "}
+                      בלוג{" "}
                     </Link>
                   </li>
                   <li className="footer-lists__item">
                     <Link scroll={false} href="/blog-details" className="footer-lists__link">
-                      Blog Details
+                      פרטי הבלוג
                     </Link>
                   </li>
                 </ul>
@@ -154,7 +153,7 @@ const FooterOne = () => {
               <div className="footer-widget">
                 <h5 className="footer-widget__title text-white">Subscribe</h5>
                 <p className="footer-widget__desc">
-                  Subscribe our newsletter to get updated the latest news
+                  הירשמו לניוזלטר שלנו כדי לקבל את החדשות האחרונות
                 </p>
                 <form
                   action="#"
@@ -163,13 +162,13 @@ const FooterOne = () => {
                   <input
                     type="text"
                     className="form-control common-input pill text-white"
-                    placeholder="Enter Mail"
+                    placeholder="הכנס מייל"
                   />
                   <button
                     type="submit"
                     className="btn btn-main btn-lg w-100 pill"
                   >
-                    Subscribe Now
+                    הירשם עכשיו
                   </button>
                 </form>
               </div>
@@ -182,17 +181,17 @@ const FooterOne = () => {
         <div className="container container-two">
           <div className="bottom-footer__inner flx-between gap-3">
             <p className="bottom-footer__text font-14">
-              Copyright © 2024 DPmarket, All rights reserved.
+              זכויות יוצרים © 2024 DPmarket, כל הזכויות שמורות.
             </p>
             <div className="footer-links">
               <Link scroll={false} href="#" className="footer-link font-14">
-                Terms of service
+                תנאי שימוש
               </Link>
               <Link scroll={false} href="#" className="footer-link font-14">
-                Privacy Policy
+                מדיניות פרטיות
               </Link>
               <Link scroll={false} href="/contact" className="footer-link font-14">
-                cookies
+                עוגיות
               </Link>
             </div>
           </div>
