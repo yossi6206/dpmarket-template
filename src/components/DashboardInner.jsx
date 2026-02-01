@@ -8,10 +8,10 @@ const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 const DashboardInner = () => {
 
     let series = [{
-        name: 'series1',
+        name: 'סדרה 1',
         data: [31, 40, 28, 51, 42, 109, 100]
     }, {
-        name: 'series2',
+        name: 'סדרה 2',
         data: [11, 32, 45, 32, 34, 52, 41]
     }]
     let options = {
@@ -40,13 +40,13 @@ const DashboardInner = () => {
             {/* welcome balance Content Start */}
             <div className="welcome-balance mt-2 mb-40 flx-between gap-2">
                 <div className="welcome-balance__left">
-                    <h4 className="welcome-balance__title mb-0">Welcome back! Michel</h4>
+                    <h4 className="welcome-balance__title mb-0">ברוך הבא! מיכאל</h4>
                 </div>
                 <div className="welcome-balance__right flx-align gap-2">
                     <span className="welcome-balance__text fw-500 text-heading">
-                        Available Balance:
+                        יתרה זמינה:
                     </span>
-                    <h4 className="welcome-balance__balance mb-0">$580.00</h4>
+                    <h4 className="welcome-balance__balance mb-0">₪2,150.00</h4>
                 </div>
             </div>
             {/* welcome balance Content End */}
@@ -76,7 +76,7 @@ const DashboardInner = () => {
                                     <div>
                                         <h4 className="dashboard-widget__number mb-1 mt-3">2M+</h4>
                                         <span className="dashboard-widget__text font-14">
-                                            Total Products
+                                            סה״כ מוצרים
                                         </span>
                                     </div>
                                     <img src="assets/images/icons/chart-icon.svg" alt="" />
@@ -104,10 +104,10 @@ const DashboardInner = () => {
                                 <div className="dashboard-widget__content flx-between gap-1 align-items-end">
                                     <div>
                                         <h4 className="dashboard-widget__number mb-1 mt-3">
-                                            $5289.00
+                                            ₪19,570
                                         </h4>
                                         <span className="dashboard-widget__text font-14">
-                                            Total Earnings
+                                            סה״כ הכנסות
                                         </span>
                                     </div>
                                     <img src="assets/images/icons/chart-icon.svg" alt="" />
@@ -134,9 +134,9 @@ const DashboardInner = () => {
                                 </span>
                                 <div className="dashboard-widget__content flx-between gap-1 align-items-end">
                                     <div>
-                                        <h4 className="dashboard-widget__number mb-1 mt-3">5,2458</h4>
+                                        <h4 className="dashboard-widget__number mb-1 mt-3">5,248</h4>
                                         <span className="dashboard-widget__text font-14">
-                                            Total Downloads
+                                            סה״כ הורדות
                                         </span>
                                     </div>
                                     <img src="assets/images/icons/chart-icon.svg" alt="" />
@@ -165,7 +165,7 @@ const DashboardInner = () => {
                                     <div>
                                         <h4 className="dashboard-widget__number mb-1 mt-3">2,589</h4>
                                         <span className="dashboard-widget__text font-14">
-                                            Total Sales
+                                            סה״כ מכירות
                                         </span>
                                     </div>
                                     <img src="assets/images/icons/chart-icon.svg" alt="" />
@@ -181,12 +181,12 @@ const DashboardInner = () => {
                         <div className="col-xl-8">
                             <div className="dashboard-card">
                                 <div className="dashboard-card__header flx-between gap-2">
-                                    <h6 className="dashboard-card__title mb-0">Sales History</h6>
+                                    <h6 className="dashboard-card__title mb-0">היסטוריית מכירות</h6>
                                     <div className="select-has-icon d-inline-block">
                                         <select className="select common-input select-sm" defaultValue={1}>
-                                            <option value={1}>Monthly</option>
-                                            <option value={2}>Daily</option>
-                                            <option value={3}>Yearly</option>
+                                            <option value={1}>חודשי</option>
+                                            <option value={2}>יומי</option>
+                                            <option value={3}>שנתי</option>
                                         </select>
                                     </div>
                                 </div>
@@ -198,7 +198,7 @@ const DashboardInner = () => {
                         <div className="col-xl-4">
                             <div className="dashboard-card">
                                 <div className="dashboard-card__header">
-                                    <h6 className="dashboard-card__title mb-0">Top Countries</h6>
+                                    <h6 className="dashboard-card__title mb-0">מדינות מובילות</h6>
                                 </div>
                                 <ul className="country-list">
                                     <li className="country-list__item flx-between gap-2">
@@ -206,108 +206,108 @@ const DashboardInner = () => {
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag1.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">United States</span>
+                                            <span className="country-list__name">ארצות הברית</span>
                                         </div>
-                                        <span className="country-list__amount">$58.00</span>
+                                        <span className="country-list__amount">₪215</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag2.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Maxico</span>
+                                            <span className="country-list__name">מקסיקו</span>
                                         </div>
-                                        <span className="country-list__amount">$69.00</span>
+                                        <span className="country-list__amount">₪255</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag3.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Brazil</span>
+                                            <span className="country-list__name">ברזיל</span>
                                         </div>
-                                        <span className="country-list__amount">$120.00</span>
+                                        <span className="country-list__amount">₪444</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag4.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Canada</span>
+                                            <span className="country-list__name">קנדה</span>
                                         </div>
-                                        <span className="country-list__amount">$25.00</span>
+                                        <span className="country-list__amount">₪92</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag5.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Ireland</span>
+                                            <span className="country-list__name">אירלנד</span>
                                         </div>
-                                        <span className="country-list__amount">$85.00</span>
+                                        <span className="country-list__amount">₪315</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag6.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Newzealand</span>
+                                            <span className="country-list__name">ניו זילנד</span>
                                         </div>
-                                        <span className="country-list__amount">$99.00</span>
+                                        <span className="country-list__amount">₪366</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag7.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Spain</span>
+                                            <span className="country-list__name">ספרד</span>
                                         </div>
-                                        <span className="country-list__amount">$89.00</span>
+                                        <span className="country-list__amount">₪329</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag8.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Turkey</span>
+                                            <span className="country-list__name">טורקיה</span>
                                         </div>
-                                        <span className="country-list__amount">$72.00</span>
+                                        <span className="country-list__amount">₪266</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag9.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Italy</span>
+                                            <span className="country-list__name">איטליה</span>
                                         </div>
-                                        <span className="country-list__amount">$465.00</span>
+                                        <span className="country-list__amount">₪1,720</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag10.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Argentina</span>
+                                            <span className="country-list__name">ארגנטינה</span>
                                         </div>
-                                        <span className="country-list__amount">$45.00</span>
+                                        <span className="country-list__amount">₪166</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag11.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Maxico</span>
+                                            <span className="country-list__name">גרמניה</span>
                                         </div>
-                                        <span className="country-list__amount">$42.00</span>
+                                        <span className="country-list__amount">₪155</span>
                                     </li>
                                     <li className="country-list__item flx-between gap-2">
                                         <div className="country-list__content flx-align gap-2">
                                             <span className="country-list__flag">
                                                 <img src="assets/images/thumbs/flag12.png" alt="" />
                                             </span>
-                                            <span className="country-list__name">Newzealand</span>
+                                            <span className="country-list__name">צרפת</span>
                                         </div>
-                                        <span className="country-list__amount">$89.00</span>
+                                        <span className="country-list__amount">₪329</span>
                                     </li>
                                 </ul>
                             </div>
@@ -321,76 +321,76 @@ const DashboardInner = () => {
                         <table className="table style-two">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
-                                    <th>Item Sales</th>
-                                    <th>Earning</th>
+                                    <th>תאריך</th>
+                                    <th>מכירות פריטים</th>
+                                    <th>הכנסה</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td> Saturday, 10</td>
-                                    <td> 2</td>
-                                    <td> $89.00</td>
+                                    <td>שבת, 10</td>
+                                    <td>2</td>
+                                    <td>₪329</td>
                                 </tr>
                                 <tr>
-                                    <td> Sunday, 11</td>
-                                    <td> 3 </td>
-                                    <td>$150.00</td>
+                                    <td>ראשון, 11</td>
+                                    <td>3</td>
+                                    <td>₪555</td>
                                 </tr>
                                 <tr>
-                                    <td> Monday, 12</td>
-                                    <td> 2 </td>
-                                    <td>$15.00</td>
+                                    <td>שני, 12</td>
+                                    <td>2</td>
+                                    <td>₪55</td>
                                 </tr>
                                 <tr>
-                                    <td> Tuesday, 15</td>
-                                    <td> 2 </td>
-                                    <td>$25.00</td>
+                                    <td>שלישי, 15</td>
+                                    <td>2</td>
+                                    <td>₪92</td>
                                 </tr>
                                 <tr>
-                                    <td> Wednesday, 16</td>
-                                    <td> 5 </td>
-                                    <td>$20.00</td>
+                                    <td>רביעי, 16</td>
+                                    <td>5</td>
+                                    <td>₪74</td>
                                 </tr>
                                 <tr>
-                                    <td> Thursday, 17</td>
-                                    <td> 3 </td>
-                                    <td>$35.00</td>
+                                    <td>חמישי, 17</td>
+                                    <td>3</td>
+                                    <td>₪129</td>
                                 </tr>
                                 <tr>
-                                    <td> Wednesday, 18</td>
-                                    <td> 1 </td>
-                                    <td>$15.00</td>
+                                    <td>רביעי, 18</td>
+                                    <td>1</td>
+                                    <td>₪55</td>
                                 </tr>
                                 <tr>
-                                    <td> Thursday, 20</td>
-                                    <td> 5 </td>
-                                    <td>$22.00</td>
+                                    <td>חמישי, 20</td>
+                                    <td>5</td>
+                                    <td>₪81</td>
                                 </tr>
                                 <tr>
-                                    <td> Wednesday, 22</td>
-                                    <td> 8 </td>
-                                    <td>$10.00</td>
+                                    <td>רביעי, 22</td>
+                                    <td>8</td>
+                                    <td>₪37</td>
                                 </tr>
                                 <tr>
-                                    <td> Tuesday, 23</td>
-                                    <td> 6 </td>
-                                    <td>$125.00</td>
+                                    <td>שלישי, 23</td>
+                                    <td>6</td>
+                                    <td>₪462</td>
                                 </tr>
                                 <tr>
-                                    <td> Wednesday, 24</td>
-                                    <td> 3 </td>
-                                    <td>$15.00</td>
+                                    <td>רביעי, 24</td>
+                                    <td>3</td>
+                                    <td>₪55</td>
                                 </tr>
                                 <tr>
-                                    <td> Tuesday, 23</td>
-                                    <td> 9 </td>
-                                    <td>$15.00</td>
+                                    <td>שלישי, 23</td>
+                                    <td>9</td>
+                                    <td>₪55</td>
                                 </tr>
                                 <tr>
-                                    <td>Wednesday, 24</td>
-                                    <td> 5 </td>
-                                    <td>$23.00</td>
+                                    <td>רביעי, 24</td>
+                                    <td>5</td>
+                                    <td>₪85</td>
                                 </tr>
                             </tbody>
                         </table>
