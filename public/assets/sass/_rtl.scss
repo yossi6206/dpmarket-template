@@ -58,11 +58,11 @@
   }
 
   .header-menu .nav-menu {
-    flex-direction: row-reverse;
+    flex-direction: row !important;
   }
 
   .header-right {
-    flex-direction: row-reverse;
+    flex-direction: row !important;
   }
 
   .nav-menu__item .nav-submenu {
