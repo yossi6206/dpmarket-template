@@ -81,15 +81,13 @@ const ResourceOne = () => {
       <div className="container container-two">
         <div className="section-heading style-left style-flex flx-between align-items-end gap-3">
           <div className="section-heading__inner w-lg">
-            <h3 className="section-heading__title">Free Resources</h3>
+            <h3 className="section-heading__title">משאבים חינמיים</h3>
             <p className="section-heading__desc">
-              Every month we pick some best products for you. This month's best
-              web themes &amp; templates have arrived, chosen by our content
-              specialists.
+              בכל חודש אנו בוחרים עבורכם את המוצרים הטובים ביותר. התבניות והעיצובים המובילים של החודש הגיעו, נבחרו על ידי מומחי התוכן שלנו.
             </p>
           </div>
           <Link scroll={false} href="#" className="btn btn-main btn-lg pill">
-            View All Items
+            צפה בכל הפריטים
           </Link>
         </div>
         <div className="resource-slider gy-4">
@@ -110,7 +108,7 @@ const ResourceOne = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    SaaS dashboard digital products Title here
+                    לוח בקרה SaaS למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
@@ -133,7 +131,7 @@ const ResourceOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-14 mb-2">
-                      1200 Sales
+                      1200 מכירות
                     </span>
                     <div className="d-flex align-items-center gap-1">
                       <ul className="star-rating">
@@ -162,7 +160,7 @@ const ResourceOne = () => {
                     href="/product-details"
                     className="btn btn-outline-light btn-sm pill"
                   >
-                    Live Demo
+                    תצוגה מקדימה
                   </Link>
                 </div>
               </div>
@@ -183,7 +181,7 @@ const ResourceOne = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    SaaS dashboard digital products Title here
+                    לוח בקרה SaaS למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
@@ -206,7 +204,7 @@ const ResourceOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-14 mb-2">
-                      952 Sales
+                      952 מכירות
                     </span>
                     <div className="d-flex align-items-center gap-1">
                       <ul className="star-rating">
@@ -235,7 +233,7 @@ const ResourceOne = () => {
                     href="/product-details"
                     className="btn btn-outline-light btn-sm pill"
                   >
-                    Live Demo
+                    תצוגה מקדימה
                   </Link>
                 </div>
               </div>
@@ -256,7 +254,7 @@ const ResourceOne = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    SaaS dashboard digital products Title here
+                    לוח בקרה SaaS למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
@@ -279,7 +277,7 @@ const ResourceOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-14 mb-2">
-                      1000 Sales
+                      1000 מכירות
                     </span>
                     <div className="d-flex align-items-center gap-1">
                       <ul className="star-rating">
@@ -308,7 +306,7 @@ const ResourceOne = () => {
                     href="/product-details"
                     className="btn btn-outline-light btn-sm pill"
                   >
-                    Live Demo
+                    תצוגה מקדימה
                   </Link>
                 </div>
               </div>
@@ -329,7 +327,7 @@ const ResourceOne = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    SaaS dashboard digital products Title here
+                    לוח בקרה SaaS למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
@@ -352,7 +350,7 @@ const ResourceOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-14 mb-2">
-                      320 Sales
+                      320 מכירות
                     </span>
                     <div className="d-flex align-items-center gap-1">
                       <ul className="star-rating">
@@ -381,7 +379,7 @@ const ResourceOne = () => {
                     href="/product-details"
                     className="btn btn-outline-light btn-sm pill"
                   >
-                    Live Demo
+                    תצוגה מקדימה
                   </Link>
                 </div>
               </div>
@@ -402,7 +400,7 @@ const ResourceOne = () => {
               <div className="product-item__content">
                 <h6 className="product-item__title">
                   <Link scroll={false} href="/product-details" className="link">
-                    SaaS dashboard digital products Title here
+                    לוח בקרה SaaS למוצרים דיגיטליים
                   </Link>
                 </h6>
                 <div className="product-item__info flx-between gap-2">
@@ -425,7 +423,7 @@ const ResourceOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-14 mb-2">
-                      1001 Sales
+                      1001 מכירות
                     </span>
                     <div className="d-flex align-items-center gap-1">
                       <ul className="star-rating">
@@ -454,7 +452,7 @@ const ResourceOne = () => {
                     href="/product-details"
                     className="btn btn-outline-light btn-sm pill"
                   >
-                    Live Demo
+                    תצוגה מקדימה
                   </Link>
                 </div>
               </div>

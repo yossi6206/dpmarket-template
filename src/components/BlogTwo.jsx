@@ -7,11 +7,11 @@ const BlogTwo = () => {
         <div className="section-heading style-left style-flex flx-between align-items-end gap-3">
           <div className="section-heading__inner">
             <h3 className="section-heading__title">
-              Browse all latest blogs and articles
+              עיינו בכל המאמרים והבלוגים האחרונים
             </h3>
           </div>
           <Link scroll={false} href="/blog" className="btn btn-outline-light btn-lg pill">
-            Browse All Articles
+            לכל המאמרים
           </Link>
         </div>
         <div className="article-item-wrapper">
@@ -23,7 +23,7 @@ const BlogTwo = () => {
                     <img src="assets/images/thumbs/user-info-img1.png" alt="" />
                   </div>
                   <span className="user-info__text mt-2 mb-1 font-14 text-heading">
-                    Posted by
+                    פורסם על ידי
                   </span>
                   <h6 className="user-info__name font-16 font-body fw-600 mb-0">
                     Ralph Edwards
@@ -34,10 +34,10 @@ const BlogTwo = () => {
                 <div className="article-item__content">
                   <div className="article-item__top flx-align">
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Startup
+                      סטארטאפ
                     </Link>
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Marketing
+                      שיווק
                     </Link>
                     <span className="text-heading font-16 fw-500">
                       June 24, 2024
@@ -45,12 +45,12 @@ const BlogTwo = () => {
                   </div>
                   <h4 className="article-item__title mb-3">
                     <Link scroll={false} href="/blog-details" className="link">
-                      Data-Driven Insights Unlock The Hidden Potential
+                      תובנות מבוססות נתונים פותחות פוטנציאל נסתר
                     </Link>
                   </h4>
                   <p className="article-item__desc">
-                    Etiam id euismod odio. Ut euismod sem a lacus ringill a
-                    hendrerit. facilisi orbi a arcu turpis...
+                    גלו כיצד להפוך נתונים לתובנות עסקיות בעלות ערך. 
+                    טיפים ושיטות מוכחות להצלחה...
                   </p>
                 </div>
                 <div className="article-item__thumb">
@@ -60,7 +60,7 @@ const BlogTwo = () => {
             </div>
             <div className="article-item__end flex-shrink-0">
               <Link scroll={false} href="/blog-details" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon font-26">
                   <i className="las la-arrow-right" />
                 </span>
@@ -75,7 +75,7 @@ const BlogTwo = () => {
                     <img src="assets/images/thumbs/user-info-img2.png" alt="" />
                   </div>
                   <span className="user-info__text mt-2 mb-1 font-14 text-heading">
-                    Posted by
+                    פורסם על ידי
                   </span>
                   <h6 className="user-info__name font-16 font-body fw-600 mb-0">
                     Jacob Jones
@@ -86,10 +86,10 @@ const BlogTwo = () => {
                 <div className="article-item__content">
                   <div className="article-item__top flx-align">
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Startup
+                      סטארטאפ
                     </Link>
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Marketing
+                      שיווק
                     </Link>
                     <span className="text-heading font-16 fw-500">
                       June 24, 2024
@@ -97,12 +97,12 @@ const BlogTwo = () => {
                   </div>
                   <h4 className="article-item__title mb-3">
                     <Link scroll={false} href="/blog-details" className="link">
-                      we offer best training for individuals and teams
+                      אנו מציעים את ההדרכה הטובה ביותר ליחידים וצוותים
                     </Link>
                   </h4>
                   <p className="article-item__desc">
-                    Etiam id euismod odio. Ut euismod sem a lacus ringill a
-                    hendrerit. facilisi orbi a arcu turpis...
+                    גלו כיצד להפוך נתונים לתובנות עסקיות בעלות ערך. 
+                    טיפים ושיטות מוכחות להצלחה...
                   </p>
                 </div>
                 <div className="article-item__thumb">
@@ -112,7 +112,7 @@ const BlogTwo = () => {
             </div>
             <div className="article-item__end flex-shrink-0">
               <Link scroll={false} href="/blog-details" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon font-26">
                   <i className="las la-arrow-right" />
                 </span>
@@ -127,7 +127,7 @@ const BlogTwo = () => {
                     <img src="assets/images/thumbs/user-info-img1.png" alt="" />
                   </div>
                   <span className="user-info__text mt-2 mb-1 font-14 text-heading">
-                    Posted by
+                    פורסם על ידי
                   </span>
                   <h6 className="user-info__name font-16 font-body fw-600 mb-0">
                     Jenny Wilson
@@ -138,10 +138,10 @@ const BlogTwo = () => {
                 <div className="article-item__content">
                   <div className="article-item__top flx-align">
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Startup
+                      סטארטאפ
                     </Link>
                     <Link scroll={false} href="/blog" className="article-item__tag font-14">
-                      Marketing
+                      שיווק
                     </Link>
                     <span className="text-heading font-16 fw-500">
                       June 24, 2024
@@ -149,12 +149,12 @@ const BlogTwo = () => {
                   </div>
                   <h4 className="article-item__title mb-3">
                     <Link scroll={false} href="/blog-details" className="link">
-                      The analytics feature is like having a personal fortune.
+                      תכונת האנליטיקס היא כמו לקבל יועץ אישי.
                     </Link>
                   </h4>
                   <p className="article-item__desc">
-                    Etiam id euismod odio. Ut euismod sem a lacus ringill a
-                    hendrerit. facilisi orbi a arcu turpis...
+                    גלו כיצד להפוך נתונים לתובנות עסקיות בעלות ערך. 
+                    טיפים ושיטות מוכחות להצלחה...
                   </p>
                 </div>
                 <div className="article-item__thumb">
@@ -164,7 +164,7 @@ const BlogTwo = () => {
             </div>
             <div className="article-item__end flex-shrink-0">
               <Link scroll={false} href="/blog-details" className="btn-simple">
-                Read More
+                קרא עוד
                 <span className="icon font-26">
                   <i className="las la-arrow-right" />
                 </span>
