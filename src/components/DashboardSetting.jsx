@@ -30,7 +30,7 @@ const DashboardSetting = () => {
                 </li>
                 <li className="setting-sidebar-list__item">
                   <a href="#emailSetting" className="setting-sidebar-list__link">
-                    הגדרות דוא"ל
+                    הגדרות אימייל
                   </a>
                 </li>
                 <li className="setting-sidebar-list__item">
@@ -414,7 +414,7 @@ const DashboardSetting = () => {
                 id="emailSetting"
               >
                 <div className="card-header">
-                  <h6 className="title">הגדרות דוא"לs</h6>
+                  <h6 className="title">הגדרות אימייל</h6>
                 </div>
                 <div className="card-body">
                   <div className="row gy-3">
