@@ -13,18 +13,16 @@ const BecomeSellerOne = () => {
                 alt=""
               />
               <h3 className="seller-item__title">
-                Earn 75% of the ItemD Price
+                הרוויחו 75% ממחיר הפריט
               </h3>
               <p className="seller-item__desc fw-500 text-heading">
-                Sellers receive 75% of the Itemp Price for items Dsold
-                exclusively and 50% for items sold non-exclusively. See detailed
-                informationabout the fee structure on Market.
+                מוכרים מקבלים 75% ממחיר הפריט עבור פריטים שנמכרים באופן בלעדי ו-50% עבור פריטים שנמכרים שלא באופן בלעדי. ראו מידע מפורט על מבנה העמלות.
               </p>
               <Link scroll={false}
                 href="/register"
                 className="btn btn-static-outline-black btn-xl pill fw-600"
               >
-                Become a Seller
+                הפוך למוכר
               </Link>
             </div>
           </div>
@@ -35,7 +33,7 @@ const BecomeSellerOne = () => {
                 className="position-absolute start-0 top-0 z-index--1"
                 alt=""
               />
-              <h3 className="seller-item__title">Earn until 40% commission</h3>
+              <h3 className="seller-item__title">הרוויחו עד 40% עמלה</h3>
               <p className="seller-item__desc fw-500 text-heading">
                 Our Market is the world’s largest creative market place, selling
                 millions of digital assets every year. With 30% affiliate
@@ -45,7 +43,7 @@ const BecomeSellerOne = () => {
                 href="/register"
                 className="btn btn-static-outline-black btn-xl pill fw-600"
               >
-                Become an Affiliate
+                הפוך לשותף
               </Link>
             </div>
           </div>
@@ -72,10 +70,10 @@ const BecomeSellerOne = () => {
                 <div className="col-lg-5 col-md-8">
                   <div className="support-content">
                     <h3 className="support-content__title mb-3">
-                      Support 24/7
+                      תמיכה 24/7
                     </h3>
                     <p className="support-content__desc">
-                      Wanna talk? Send us a message
+                      רוצים לשוחח? שלחו לנו הודעה
                     </p>
                     <Link scroll={false}
                       href="mailto:infomail@office.com"

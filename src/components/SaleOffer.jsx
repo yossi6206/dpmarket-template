@@ -59,31 +59,31 @@ const SaleOffer = () => {
               <div className="countdown">
                 <div className="day">
                   <span className="num">{timeLeft.days}</span>
-                  <span className="word">Days</span>
+                  <span className="word">ימים</span>
                 </div>
                 <div className="hour">
                   <span className="num">{timeLeft.hours}</span>
-                  <span className="word">Hours</span>
+                  <span className="word">שעות</span>
                 </div>
                 <div className="min">
                   <span className="num">{timeLeft.minutes}</span>
-                  <span className="word">Min</span>
+                  <span className="word">דק'</span>
                 </div>
                 <div className="sec">
                   <span className="num">{timeLeft.seconds}</span>
-                  <span className="word">Sec</span>
+                  <span className="word">שנ'</span>
                 </div>
               </div>
             </div>
             <div className="sale-offer__discount flx-align gap-2">
               <span className="sale-offer__text text-heading text-capitalize">
-                New Year Flash Sale Offer
+                מבצע פלאש לשנה החדשה
               </span>
               <strong className="sale-offer__qty text-heading font-heading">
-                45% OFF
+                45% הנחה
               </strong>
               <Link scroll={false} href="#" className="btn btn-sm btn-white pill fw-500">
-                Shop Now
+                קנה עכשיו
               </Link>
             </div>
             <div className="sale-offer__button">
