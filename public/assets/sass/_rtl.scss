@@ -211,18 +211,18 @@
   }
 
   .footer-lists__link {
-    padding-left: 0;
-    padding-right: 22px;
+    padding-left: 22px;
+    padding-right: 0;
 
     &::before {
-      left: unset;
-      right: 0;
+      left: 0;
+      right: unset;
     }
 
     &:hover {
       &::before {
-        left: unset;
-        right: 4px;
+        left: 4px;
+        right: unset;
       }
     }
   }
