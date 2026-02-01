@@ -66,7 +66,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">דוא"ל</span>
+                        <span className="text text-heading fw-500">אימייל</span>
                       </span>
                       <span className="profile-info-list__info">
                         michel15@gmail.com
@@ -245,14 +245,14 @@ const ProfileInner = () => {
                                 htmlFor="emailAdddd"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                כתובת דוא"ל
+                                כתובת אימייל
                               </label>
                               <input
                                 type="email"
                                 className="common-input border"
                                 id="emailAdddd"
                                 defaultValue="michel15@gmail.com"
-                                placeholder="כתובת דוא"ל"
+                                placeholder="כתובת אימייל"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -374,14 +374,14 @@ const ProfileInner = () => {
                                 htmlFor="emailAdd"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                כתובת דוא"ל
+                                כתובת אימייל
                               </label>
                               <input
                                 type="email"
                                 className="common-input border"
                                 id="emailAdd"
                                 defaultValue="michel15@gmail.com"
-                                placeholder="כתובת דוא"ל"
+                                placeholder="כתובת אימייל"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
