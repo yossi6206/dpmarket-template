@@ -70,6 +70,54 @@
     right: 0;
   }
 
+  // Header/menu dropdown caret placement
+  .has-submenu {
+    .nav-menu__link {
+      padding-right: 0;
+      padding-left: 16px;
+    }
+
+    > a::before {
+      right: unset;
+      left: 0;
+    }
+  }
+
+  .nav-submenu {
+    &__item {
+      &::before {
+        left: unset;
+        right: 10px;
+      }
+
+      &.activePage {
+        a {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+
+      &:hover {
+        a {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &__link {
+      padding-right: 14px;
+      padding-left: 16px;
+    }
+  }
+
+  .nav-menu--mobile {
+    .nav-submenu {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+  }
+
   // Flip icons with directional meaning
   .icon-left {
     margin-left: 8px;
@@ -160,6 +208,23 @@
 
   .footer-widget__list li {
     text-align: right;
+  }
+
+  .footer-lists__link {
+    padding-left: 0;
+    padding-right: 22px;
+
+    &::before {
+      left: unset;
+      right: 0;
+    }
+
+    &:hover {
+      &::before {
+        left: unset;
+        right: 4px;
+      }
+    }
   }
 
   .social-list {
