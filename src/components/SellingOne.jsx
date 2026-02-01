@@ -97,11 +97,11 @@ const SellingOne = () => {
         <div className="section-heading style-left style-white flx-between max-w-unset gap-4">
           <div>
             <h3 className="section-heading__title">
-              Weekly Best selling Products
+              מוצרים הנמכרים ביותר השבוע
             </h3>
             <p className="section-heading__desc font-18">
               Every month we pick some best products for you. This month's best
-              web themes &amp; templates have arrived, chosen by our content
+              ערכות נושא ותבניות אינטרנט הגיעו, נבחרו על ידי התוכן שלנו
               specialists.
             </p>
           </div>
@@ -109,7 +109,7 @@ const SellingOne = () => {
             href="/all-product"
             className="btn btn-main btn-lg pill fw-300"
           >
-            View All Items
+            צפה בכל הפריטים
           </Link>
         </div>
         <div className="selling-product-slider">
@@ -150,7 +150,7 @@ const SellingOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -192,7 +192,7 @@ const SellingOne = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      הדגמה חיה
                     </Link>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ const SellingOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -276,7 +276,7 @@ const SellingOne = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      הדגמה חיה
                     </Link>
                   </div>
                 </div>
@@ -318,7 +318,7 @@ const SellingOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -360,7 +360,7 @@ const SellingOne = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      הדגמה חיה
                     </Link>
                   </div>
                 </div>
@@ -402,7 +402,7 @@ const SellingOne = () => {
                 <div className="product-item__bottom flx-between gap-2">
                   <div>
                     <span className="product-item__sales font-16 mb-2">
-                      1230 Sales
+                      1230 מכירות
                     </span>
                     <ul className="star-rating gap-2">
                       <li className="star-rating__item font-16">
@@ -444,7 +444,7 @@ const SellingOne = () => {
                       href="/product-details"
                       className="btn btn-outline-light pill"
                     >
-                      Live Demo
+                      הדגמה חיה
                     </Link>
                   </div>
                 </div>

@@ -35,9 +35,7 @@ const BecomeSellerOne = () => {
               />
               <h3 className="seller-item__title">הרוויחו עד 40% עמלה</h3>
               <p className="seller-item__desc fw-500 text-heading">
-                Our Market is the world’s largest creative market place, selling
-                millions of digital assets every year. With 30% affiliate
-                commission, earning money has never been easier!
+                השוק שלנו הוא שוק היצירה הגדול בעולם, שמוכר מיליוני נכסים דיגיטליים מדי שנה. עם 30% עמלת שותפים, להרוויח כסף מעולם לא היה קל יותר!
               </p>
               <Link scroll={false}
                 href="/register"

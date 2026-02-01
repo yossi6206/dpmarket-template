@@ -48,11 +48,9 @@ const FeaturedAuthor = () => {
           <div className="col-xl-5">
             <div className="section-content">
               <div className="section-heading style-left">
-                <h3 className="section-heading__title">Top Featured Author</h3>
+                <h3 className="section-heading__title">יוצר מוביל</h3>
                 <p className="section-heading__desc font-18 w-sm">
-                  Every month we pick some best products for you. This month's
-                  best web themes &amp; templates have arrived, chosen by our
-                  content specialists.
+                  בכל חודש אנו בוחרים עבורכם את המוצרים הטובים ביותר. ערכות הנושא והתבניות הטובות ביותר של החודש הגיעו, נבחרו על ידי מומחי התוכן שלנו.
                 </p>
               </div>
               <div className="author-info d-flex align-items-center gap-3">
@@ -87,7 +85,7 @@ const FeaturedAuthor = () => {
                   <img src="assets/images/icons/featured-badge.png" alt="" />
                 </div>
                 <div className="circle__text" ref={textRef}>
-                     <p>DP marketer Top Featured Author</p>
+                     <p>DP marketer יוצר מוביל</p>
                 </div>
               </div>
               <div className="row gy-4 card-wrapper">
