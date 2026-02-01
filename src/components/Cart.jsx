@@ -9,10 +9,10 @@ const Cart = () => {
               <table className="table style-two">
                 <thead>
                   <tr>
-                    <th>Product Details</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Total</th>
+                    <th>פרטי מוצר</th>
+                    <th>כמות</th>
+                    <th>מחיר</th>
+                    <th>סה״כ</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -33,11 +33,11 @@ const Cart = () => {
                             <h6 className="cart-item__title font-heading fw-700 text-capitalize font-18 mb-4">
                               {" "}
                               <Link scroll={false} href="/product-details" className="link">
-                                Digital product name here
+                                שם המוצר הדיגיטלי כאן
                               </Link>
                             </h6>
                             <span className="cart-item__price font-18 text-heading fw-500">
-                              Category:{" "}
+                              קטגוריה:{" "}
                               <span className="text-body font-14">WordPress</span>
                             </span>
                           </div>
@@ -50,13 +50,13 @@ const Cart = () => {
                             >
                               <i className="fas fa-heart" />
                             </button>
-                            <span className="text-body">Add to wishlist</span>
+                            <span className="text-body">הוסף למועדפים</span>
                           </div>
                           <button
                             type="button"
                             className="rounded-btn delete-btn text-danger hover-text-decoration-underline"
                           >
-                            Remove
+                            הסר
                           </button>
                         </div>
                       </div>
@@ -79,12 +79,12 @@ const Cart = () => {
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $28.00
+                        ₪103
                       </span>
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $56.00
+                        ₪207
                       </span>
                     </td>
                   </tr>
@@ -105,11 +105,11 @@ const Cart = () => {
                             <h6 className="cart-item__title font-heading fw-700 text-capitalize font-18 mb-4">
                               {" "}
                               <Link scroll={false} href="/product-details" className="link">
-                                Digital product name here
+                                שם המוצר הדיגיטלי כאן
                               </Link>
                             </h6>
                             <span className="cart-item__price font-18 text-heading fw-500">
-                              Category:{" "}
+                              קטגוריה:{" "}
                               <span className="text-body font-14">WordPress</span>
                             </span>
                           </div>
@@ -122,13 +122,13 @@ const Cart = () => {
                             >
                               <i className="fas fa-heart" />
                             </button>
-                            <span className="text-body">Add to wishlist</span>
+                            <span className="text-body">הוסף למועדפים</span>
                           </div>
                           <button
                             type="button"
                             className="rounded-btn delete-btn text-danger hover-text-decoration-underline"
                           >
-                            Remove
+                            הסר
                           </button>
                         </div>
                       </div>
@@ -151,12 +151,12 @@ const Cart = () => {
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $28.00
+                        ₪103
                       </span>
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $56.00
+                        ₪207
                       </span>
                     </td>
                   </tr>
@@ -177,11 +177,11 @@ const Cart = () => {
                             <h6 className="cart-item__title font-heading fw-700 text-capitalize font-18 mb-4">
                               {" "}
                               <Link scroll={false} href="/product-details" className="link">
-                                Digital product name here
+                                שם המוצר הדיגיטלי כאן
                               </Link>
                             </h6>
                             <span className="cart-item__price font-18 text-heading fw-500">
-                              Category:{" "}
+                              קטגוריה:{" "}
                               <span className="text-body font-14">WordPress</span>
                             </span>
                           </div>
@@ -194,13 +194,13 @@ const Cart = () => {
                             >
                               <i className="fas fa-heart" />
                             </button>
-                            <span className="text-body">Add to wishlist</span>
+                            <span className="text-body">הוסף למועדפים</span>
                           </div>
                           <button
                             type="button"
                             className="rounded-btn delete-btn text-danger hover-text-decoration-underline"
                           >
-                            Remove
+                            הסר
                           </button>
                         </div>
                       </div>
@@ -223,12 +223,12 @@ const Cart = () => {
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $28.00
+                        ₪103
                       </span>
                     </td>
                     <td>
                       <span className="cart-item__totalPrice text-body font-18 fw-400 mb-0">
-                        $96.00
+                        ₪355
                       </span>
                     </td>
                   </tr>
@@ -241,17 +241,17 @@ const Cart = () => {
                 className="btn btn-outline-light flx-align gap-2 pill btn-lg"
               >
                 <span className="icon line-height-1 font-20">
-                  <i className="las la-arrow-left" />
+                  <i className="las la-arrow-right" />
                 </span>
-                Continue Shopping
+                המשך בקניות
               </Link>
               <Link scroll={false}
                 href="/cart-personal"
                 className="btn btn-main flx-align gap-2 pill btn-lg"
               >
-                Next
+                הבא
                 <span className="icon line-height-1 font-20">
-                  <i className="las la-arrow-right" />
+                  <i className="las la-arrow-left" />
                 </span>
               </Link>
             </div>

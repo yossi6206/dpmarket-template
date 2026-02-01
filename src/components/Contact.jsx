@@ -17,33 +17,32 @@ const Contact = () => {
           <div className="row gy-4">
             <div className="col-lg-5">
               <div className="contact-info">
-                <h3 className="contact-info__title">Get in touch with us today</h3>
+                <h3 className="contact-info__title">צרו איתנו קשר היום</h3>
                 <p className="contact-info__desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-                  rem facere labore cupiditate sint? Animi quis illo suscipit autem
-                  cum.
+                  יש לכם שאלות? רוצים לשמוע עוד על השירותים שלנו? אנחנו כאן 
+                  לעזור לכם בכל שאלה או בקשה. צוות התמיכה שלנו ישמח לסייע.
                 </p>
                 <div className="contact-info__item-wrapper flx-between gap-4">
                   <div className="contact-info__item">
                     <span className="contact-info__text text-capitalize d-block mb-1">
-                      Give Us A Call
+                      התקשרו אלינו
                     </span>
                     <Link scroll={false}
                       href="tel:01812345678"
                       className="contact-info__link font-24 fw-500 text-heading hover-text-main"
                     >
-                      01812345678
+                      03-1234567
                     </Link>
                   </div>
                   <div className="contact-info__item">
                     <span className="contact-info__text text-capitalize d-block mb-1">
-                      Give Us An Email
+                      שלחו לנו מייל
                     </span>
                     <Link scroll={false}
-                      href="tel:dpmarket@gmail.com"
+                      href="mailto:info@dpmarket.co.il"
                       className="contact-info__link font-24 fw-500 text-heading hover-text-main"
                     >
-                      dpmarket@gmail.com
+                      info@dpmarket.co.il
                     </Link>
                   </div>
                 </div>
@@ -107,13 +106,13 @@ const Contact = () => {
                           htmlFor="name"
                           className="form-label mb-2 font-18 font-heading fw-600"
                         >
-                          Full Name
+                          שם מלא
                         </label>
                         <input
                           type="text"
                           className="common-input common-input--grayBg border"
                           id="name"
-                          placeholder="Your name here"
+                          placeholder="השם שלך"
                         />
                       </div>
                       <div className="col-sm-6 col-xs-6">
@@ -121,13 +120,13 @@ const Contact = () => {
                           htmlFor="email"
                           className="form-label mb-2 font-18 font-heading fw-600"
                         >
-                          Your Mail
+                          אימייל
                         </label>
                         <input
                           type="email"
                           className="common-input common-input--grayBg border"
                           id="email"
-                          placeholder="Your email here "
+                          placeholder="האימייל שלך"
                         />
                       </div>
                       <div className="col-sm-12">
@@ -135,19 +134,19 @@ const Contact = () => {
                           htmlFor="message"
                           className="form-label mb-2 font-18 font-heading fw-600"
                         >
-                          Your Message
+                          ההודעה שלך
                         </label>
                         <textarea
                           className="common-input common-input--grayBg border"
                           id="message"
-                          placeholder="Write Your Message Here"
+                          placeholder="כתוב את ההודעה שלך כאן"
                           defaultValue={""}
                         />
                       </div>
                       <div className="col-sm-12">
                         <button className="btn btn-main btn-lg pill w-100">
                           {" "}
-                          Submit Now{" "}
+                          שליחה{" "}
                         </button>
                       </div>
                     </div>
