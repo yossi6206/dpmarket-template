@@ -32,11 +32,10 @@ const DashboardEarning = () => {
               />
               <div>
                 <h6 className="earning-card__title font-body font-16 mb-2 text-white fw-600">
-                  Procuring This Month
+                  רווחים החודש
                 </h6>
                 <p className="earning-card__text font-14  text-white fw-200">
-                  Sales earnings this month (March), after associated author fees,
-                  &amp; before taxes:
+                  רווחי מכירות החודש (מרץ), לאחר עמלות יוצרים ולפני מיסים:
                 </p>
               </div>
               <div>
@@ -44,7 +43,7 @@ const DashboardEarning = () => {
                   $6422
                 </h5>
                 <p className="earning-card__text font-14  text-white fw-200">
-                  All out Procuring after purchaser charge
+                  סה"כ רווחים לאחר חיובי רוכש
                 </p>
               </div>
             </div>
@@ -58,7 +57,7 @@ const DashboardEarning = () => {
               />
               <div>
                 <h6 className="earning-card__title font-body font-16 mb-2 text-white fw-600">
-                  Your Balance
+                  היתרה שלך
                 </h6>
               </div>
               <div>
@@ -66,7 +65,7 @@ const DashboardEarning = () => {
                   $6422
                 </h5>
                 <p className="earning-card__text font-14  text-white fw-200">
-                  Your Total Blance
+                  סה"כ היתרה שלך
                 </p>
               </div>
             </div>
@@ -80,10 +79,10 @@ const DashboardEarning = () => {
               />
               <div>
                 <h6 className="earning-card__title font-body font-16 mb-2 text-white fw-600">
-                  Absolute Worth of Your Deals.
+                  ערך מוחלט של העסקאות שלך
                 </h6>
                 <p className="earning-card__text font-14  text-white fw-200">
-                  Total Value of your sales, before taxes:{" "}
+                  סה"כ ערך מכירותיך, לפני מיסים:{" "}
                 </p>
               </div>
               <div>
@@ -91,7 +90,7 @@ const DashboardEarning = () => {
                   $6422
                 </h5>
                 <p className="earning-card__text font-14  text-white fw-200">
-                  Total Value of Sale Before Fee
+                  סה"כ ערך מכירות לפני עמלות
                 </p>
               </div>
             </div>

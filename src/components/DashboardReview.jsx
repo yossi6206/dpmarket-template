@@ -10,10 +10,10 @@ const DashboardReview = () => {
           <table className="table text-body mt--24">
             <thead>
               <tr>
-                <th>Product | Date</th>
-                <th>User</th>
-                <th>Rating</th>
-                <th>Action</th>
+                <th>מוצר | תאריך</th>
+                <th>משתמש</th>
+                <th>דירוג</th>
+                <th>פעולה</th>
               </tr>
             </thead>
             <tbody>
@@ -340,7 +340,7 @@ const DashboardReview = () => {
                 <option value={10}>10</option>
               </select>
               <span className="paginate-content__text fs-14">
-                Showing 1 - 10 of 100
+                מציג 1 - 10 מתוך 100
               </span>
             </div>
             <nav aria-label="Page navigation example">
@@ -367,7 +367,7 @@ const DashboardReview = () => {
                 </li>
                 <li className="page-item">
                   <Link scroll={false} className="page-link flx-align gap-2 flex-nowrap" href="#">
-                    Next
+                    הבא
                     <span className="icon line-height-1 font-20">
                       <i className="las la-arrow-right" />
                     </span>

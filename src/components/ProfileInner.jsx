@@ -11,7 +11,7 @@ const ProfileInner = () => {
                   {" "}
                   <img src="assets/images/icons/camera-two.svg" alt="" />{" "}
                 </span>
-                <span className="text">Change Cover</span>
+                <span className="text">שנה תמונת נושא</span>
               </label>
             </div>
             <div className="avatar-preview">
@@ -42,9 +42,9 @@ const ProfileInner = () => {
                         <div id="imagePreview"></div>
                       </div>
                     </div>
-                    <h5 className="profile-info__name mb-1">Michel Smith</h5>
+                    <h5 className="profile-info__name mb-1">מיכאל סמית</h5>
                     <span className="profile-info__designation font-14">
-                      Exclusive Author
+                      יוצר בלעדי
                     </span>
                   </div>
                   <ul className="profile-info-list">
@@ -55,7 +55,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Username</span>
+                        <span className="text text-heading fw-500">שם משתמש</span>
                       </span>
                       <span className="profile-info-list__info">michel15</span>
                     </li>
@@ -66,7 +66,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Email</span>
+                        <span className="text text-heading fw-500">דוא"ל</span>
                       </span>
                       <span className="profile-info-list__info">
                         michel15@gmail.com
@@ -79,7 +79,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Phone</span>
+                        <span className="text text-heading fw-500">טלפון</span>
                       </span>
                       <span className="profile-info-list__info">
                         +880 15589 236 45
@@ -92,7 +92,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Country</span>
+                        <span className="text text-heading fw-500">מדינה</span>
                       </span>
                       <span className="profile-info-list__info">Bangladesh</span>
                     </li>
@@ -103,7 +103,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Balance</span>
+                        <span className="text text-heading fw-500">יתרה</span>
                       </span>
                       <span className="profile-info-list__info">$0.00 USD</span>
                     </li>
@@ -114,7 +114,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Member Since</span>
+                        <span className="text text-heading fw-500">חבר מאז</span>
                       </span>
                       <span className="profile-info-list__info">Jan, 01, 2024</span>
                     </li>
@@ -125,7 +125,7 @@ const ProfileInner = () => {
                           alt=""
                           className="icon"
                         />
-                        <span className="text text-heading fw-500">Purchased</span>
+                        <span className="text text-heading fw-500">נרכש</span>
                       </span>
                       <span className="profile-info-list__info">0 items</span>
                     </li>
@@ -151,7 +151,7 @@ const ProfileInner = () => {
                           aria-controls="pills-personalInfo"
                           aria-selected="true"
                         >
-                          Personal Info
+                          מידע אישי
                         </button>
                       </li>
                       <li className="nav-item" role="presentation">
@@ -165,7 +165,7 @@ const ProfileInner = () => {
                           aria-controls="pills-payouts"
                           aria-selected="false"
                         >
-                          Payouts
+                          תשלומים
                         </button>
                       </li>
                       <li className="nav-item" role="presentation">
@@ -179,7 +179,7 @@ const ProfileInner = () => {
                           aria-controls="pills-changePassword"
                           aria-selected="false"
                         >
-                          Change Password
+                          שנה סיסמה
                         </button>
                       </li>
                     </ul>
@@ -200,14 +200,14 @@ const ProfileInner = () => {
                                 htmlFor="fName"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                First Name
+                                שם פרטי
                               </label>
                               <input
                                 type="text"
                                 className="common-input border"
                                 id="fName"
                                 defaultValue="Michel"
-                                placeholder="First Name"
+                                placeholder="שם פרטי"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -215,14 +215,14 @@ const ProfileInner = () => {
                                 htmlFor="lastNamee"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Last Name
+                                שם משפחה
                               </label>
                               <input
                                 type="text"
                                 className="common-input border"
                                 id="lastNamee"
                                 defaultValue="Smith"
-                                placeholder="Last Name"
+                                placeholder="שם משפחה"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -230,14 +230,14 @@ const ProfileInner = () => {
                                 htmlFor="phonee"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Phone Number
+                                מספר טלפון
                               </label>
                               <input
                                 type="tel"
                                 className="common-input border"
                                 id="phonee"
                                 defaultValue="+880 15589 236 45"
-                                placeholder="Phone Number"
+                                placeholder="מספר טלפון"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -245,14 +245,14 @@ const ProfileInner = () => {
                                 htmlFor="emailAdddd"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Email Address
+                                כתובת דוא"ל
                               </label>
                               <input
                                 type="email"
                                 className="common-input border"
                                 id="emailAdddd"
                                 defaultValue="michel15@gmail.com"
-                                placeholder="Email Address"
+                                placeholder="כתובת דוא"ל"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -260,7 +260,7 @@ const ProfileInner = () => {
                                 htmlFor="cityyy"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                City
+                                עיר
                               </label>
                               <div className="select-has-icon">
                                 <select className="common-input border" id="cityyy" defaultValue={1}>
@@ -276,7 +276,7 @@ const ProfileInner = () => {
                                 htmlFor="Stateee"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                State/Region
+                                מחוז/אזור
                               </label>
                               <div className="select-has-icon">
                                 <select className="common-input border" id="Stateee" defaultValue={1}>
@@ -289,30 +289,30 @@ const ProfileInner = () => {
                             </div>
                             <div className="col-sm-6 col-xs-6">
                               <label
-                                htmlFor="Postcodeee"
+                                htmlFor="מיקודee"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Postcode
+                                מיקוד
                               </label>
                               <input
                                 type="text"
                                 className="common-input border"
-                                id="Postcodeee"
+                                id="מיקודee"
                                 defaultValue={1219}
-                                placeholder="Post Code"
+                                placeholder="מיקוד"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
                               <label
-                                htmlFor="Countryyy"
+                                htmlFor="מדינהyy"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Country
+                                מדינה
                               </label>
                               <div className="select-has-icon">
                                 <select
                                   className="common-input border"
-                                  id="Countryyy" defaultValue={1}
+                                  id="מדינהyy" defaultValue={1}
                                 >
                                   <option value={1}>USA</option>
                                   <option value={1}>Bangladesh</option>
@@ -324,7 +324,7 @@ const ProfileInner = () => {
                             <div className="col-sm-12 text-end">
                               <button className="btn btn-main btn-lg pill mt-4">
                                 {" "}
-                                Update Profile
+                                עדכן פרופיל
                               </button>
                             </div>
                           </div>
@@ -344,14 +344,14 @@ const ProfileInner = () => {
                                 htmlFor="name"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Full Name
+                                שם מלא
                               </label>
                               <input
                                 type="text"
                                 className="common-input border"
                                 id="name"
                                 defaultValue="Michel"
-                                placeholder="Full Name"
+                                placeholder="שם מלא"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -359,14 +359,14 @@ const ProfileInner = () => {
                                 htmlFor="phone"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Phone Number
+                                מספר טלפון
                               </label>
                               <input
                                 type="tel"
                                 className="common-input border"
                                 id="phone"
                                 defaultValue="+880 15589 236 45"
-                                placeholder="Phone Number"
+                                placeholder="מספר טלפון"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -374,14 +374,14 @@ const ProfileInner = () => {
                                 htmlFor="emailAdd"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                Email Address
+                                כתובת דוא"ל
                               </label>
                               <input
                                 type="email"
                                 className="common-input border"
                                 id="emailAdd"
                                 defaultValue="michel15@gmail.com"
-                                placeholder="Email Address"
+                                placeholder="כתובת דוא"ל"
                               />
                             </div>
                             <div className="col-sm-6 col-xs-6">
@@ -389,7 +389,7 @@ const ProfileInner = () => {
                                 htmlFor="city"
                                 className="form-label mb-2 font-18 font-heading fw-600"
                               >
-                                City
+                                עיר
                               </label>
                               <div className="select-has-icon">
                                 <select className="common-input border" id="city" defaultValue={1}>

@@ -33,7 +33,7 @@ const AllProduct = () => {
                 <span className="icon icon-left">
                   <img src="assets/images/icons/filter.svg" alt="" />
                 </span>
-                <span className="font-18 fw-500">Filters</span>
+                <span className="font-18 fw-500">סינון</span>
               </button>
               <ul
                 className="nav common-tab nav-pills mb-0 gap-lg-2 gap-1 ms-lg-auto"
@@ -51,7 +51,7 @@ const AllProduct = () => {
                     aria-controls="pills-product"
                     aria-selected="true"
                   >
-                    All Item
+                    כל הפריטים
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -65,21 +65,21 @@ const AllProduct = () => {
                     aria-controls="pills-bestMatch"
                     aria-selected="false"
                   >
-                    Best Match
+                    התאמה מושלמת
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
                     className="nav-link"
-                    id="pills-bestRating-tab"
+                    id="pills-bestדירוג-tab"
                     data-bs-toggle="pill"
-                    data-bs-target="#pills-bestRating"
+                    data-bs-target="#pills-bestדירוג"
                     type="button"
                     role="tab"
-                    aria-controls="pills-bestRating"
+                    aria-controls="pills-bestדירוג"
                     aria-selected="false"
                   >
-                    Best Rating
+                    דירוג הכי טוב
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -93,7 +93,7 @@ const AllProduct = () => {
                     aria-controls="pills-trending"
                     aria-selected="false"
                   >
-                    Site Template
+                    תבניות אתר
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -107,7 +107,7 @@ const AllProduct = () => {
                     aria-controls="pills-bestOffers"
                     aria-selected="false"
                   >
-                    Best Offers
+                    הצעות הכי טובות
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
@@ -121,7 +121,7 @@ const AllProduct = () => {
                     aria-controls="pills-bestSelling"
                     aria-selected="false"
                   >
-                    Best Selling
+                    הנמכרים ביותר
                   </button>
                 </li>
               </ul>
@@ -150,10 +150,10 @@ const AllProduct = () => {
                 <div className="col-sm-4 col-xs-6">
                   <div className="flx-between gap-1">
                     <label htmlFor="tag" className="form-label font-16">
-                      Tag
+                      תגית
                     </label>
                     <button type="reset" className="text-body font-14">
-                      Clear
+                      נקה
                     </button>
                   </div>
                   <div className="position-relative">
@@ -161,7 +161,7 @@ const AllProduct = () => {
                       type="text"
                       className="common-input border-gray-five common-input--withLeftIcon"
                       id="tag"
-                      placeholder="Search By Tag..."
+                      placeholder="חפש לפי תגית..."
                     />
                     <span className="input-icon input-icon--left">
                       <img src="assets/images/icons/search-two.svg" alt="" />
@@ -170,18 +170,18 @@ const AllProduct = () => {
                 </div>
                 <div className="col-sm-4 col-xs-6">
                   <div className="flx-between gap-1">
-                    <label htmlFor="Price" className="form-label font-16">
-                      Price
+                    <label htmlFor="מחיר" className="form-label font-16">
+                      מחיר
                     </label>
                     <button type="reset" className="text-body font-14">
-                      Clear
+                      נקה
                     </button>
                   </div>
                   <div className="position-relative">
                     <input
                       type="text"
                       className="common-input border-gray-five"
-                      id="Price"
+                      id="מחיר"
                       placeholder="$7 - $29"
                     />
                   </div>
@@ -189,17 +189,17 @@ const AllProduct = () => {
                 <div className="col-sm-4">
                   <div className="flx-between gap-1">
                     <label htmlFor="time" className="form-label font-16">
-                      Time Frame
+                      טווח זמן
                     </label>
                     <button type="reset" className="text-body font-14">
-                      Clear
+                      נקה
                     </button>
                   </div>
                   <div className="position-relative select-has-icon">
                     <select id="time" className="common-input border-gray-five" defaultValue={1}>
-                      <option value={1}>Now</option>
-                      <option value={2}>Yesterday</option>
-                      <option value={2}>1 Month Ago</option>
+                      <option value={1}>עכשיו</option>
+                      <option value={2}>אתמול</option>
+                      <option value={2}>לפני חודש</option>
                     </select>
                   </div>
                 </div>
@@ -220,68 +220,68 @@ const AllProduct = () => {
                   type="button"
                   className="filter-sidebar__button font-16 text-capitalize fw-500"
                 >
-                  Category
+                  קטגוריה
                 </button>
                 <div className="filter-sidebar__content">
                   <ul className="filter-sidebar-list">
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        All Categories <span className="qty">25489</span>
+                        כל הקטגוריות <span className="qty">25489</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Site Template <span className="qty">12,501</span>
+                        תבניות אתר <span className="qty">12,501</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        WordPress <span className="qty">1258</span>
+                        וורדפרס <span className="qty">1258</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        UI Template <span className="qty">1520</span>
+                        תבנית UI <span className="qty">1520</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Templates Kits <span className="qty">210</span>
+                        ערכות תבניות <span className="qty">210</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        eCommerce <span className="qty">158</span>
+                        מסחר אלקטרוני <span className="qty">158</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Marketing <span className="qty">178</span>
+                        שיווק <span className="qty">178</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        CMS Template <span className="qty">122</span>
+                        תבנית CMS <span className="qty">122</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Muse Themes <span className="qty">450</span>
+                        ערכות נושא Muse <span className="qty">450</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Blogging <span className="qty">155</span>
+                        בלוגים <span className="qty">155</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Courses <span className="qty">125</span>
+                        קורסים <span className="qty">125</span>
                       </Link>
                     </li>
                     <li className="filter-sidebar-list__item">
                       <Link scroll={false} href="/" className="filter-sidebar-list__text">
-                        Forums <span className="qty">35</span>
+                        פורומים <span className="qty">35</span>
                       </Link>
                     </li>
                   </ul>
@@ -292,7 +292,7 @@ const AllProduct = () => {
                   type="button"
                   className="filter-sidebar__button font-16 text-capitalize fw-500"
                 >
-                  Rating
+                  דירוג
                 </button>
                 <div className="filter-sidebar__content">
                   <ul className="filter-sidebar-list">
@@ -395,7 +395,7 @@ const AllProduct = () => {
                             className="form-check-label"
                             htmlFor="fiveStar"
                           >
-                            5 Star Rating
+                            5 Star דירוג
                           </label>
                         </div>
                         <span className="qty">(2530)</span>
@@ -553,7 +553,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -631,7 +631,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -709,7 +709,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -787,7 +787,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -865,7 +865,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -943,7 +943,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -1021,7 +1021,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -1099,7 +1099,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1177,7 +1177,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1255,7 +1255,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1333,7 +1333,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1411,7 +1411,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1541,7 +1541,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -1619,7 +1619,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -1697,7 +1697,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -1775,7 +1775,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -1853,7 +1853,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -1931,7 +1931,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -2009,7 +2009,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -2087,7 +2087,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2165,7 +2165,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2243,7 +2243,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2321,7 +2321,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2399,7 +2399,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2488,9 +2488,9 @@ const AllProduct = () => {
               </div>
               <div
                 className="tab-pane fade"
-                id="pills-bestRating"
+                id="pills-bestדירוג"
                 role="tabpanel"
-                aria-labelledby="pills-bestRating-tab"
+                aria-labelledby="pills-bestדירוג-tab"
                 tabIndex={0}
               >
                 <div className="row gy-4 list-grid-wrapper">
@@ -2529,7 +2529,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -2607,7 +2607,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -2685,7 +2685,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -2763,7 +2763,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -2841,7 +2841,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -2919,7 +2919,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -2997,7 +2997,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -3075,7 +3075,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3153,7 +3153,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3231,7 +3231,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3309,7 +3309,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3387,7 +3387,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3517,7 +3517,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -3595,7 +3595,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -3673,7 +3673,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -3751,7 +3751,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -3829,7 +3829,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -3907,7 +3907,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -3985,7 +3985,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -4063,7 +4063,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4141,7 +4141,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4219,7 +4219,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4297,7 +4297,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4375,7 +4375,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4505,7 +4505,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -4583,7 +4583,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -4661,7 +4661,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -4739,7 +4739,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -4817,7 +4817,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -4895,7 +4895,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -4973,7 +4973,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -5051,7 +5051,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5129,7 +5129,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5207,7 +5207,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5285,7 +5285,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5363,7 +5363,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5493,7 +5493,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$120</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -5571,7 +5571,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $236
                             </span>
                           </div>
@@ -5649,7 +5649,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -5727,7 +5727,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$59</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -5805,7 +5805,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$99</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $129
                             </span>
                           </div>
@@ -5883,7 +5883,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $256
                             </span>
                           </div>
@@ -5961,7 +5961,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$129</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $259
                             </span>
                           </div>
@@ -6039,7 +6039,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -6117,7 +6117,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -6195,7 +6195,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -6273,7 +6273,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
@@ -6351,7 +6351,7 @@ const AllProduct = () => {
                           </span>
                           <div className="flx-align gap-2">
                             <h6 className="product-item__price mb-0">$79</h6>
-                            <span className="product-item__prevPrice text-decoration-line-through">
+                            <span className="product-item__prevמחיר text-decoration-line-through">
                               $99
                             </span>
                           </div>
