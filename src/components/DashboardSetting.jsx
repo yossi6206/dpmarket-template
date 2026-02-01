@@ -8,34 +8,34 @@ const DashboardSetting = () => {
         <div className="row gy-4">
           <div className="col-lg-4 pe-xl-5">
             <div className="setting-sidebar top-24">
-              <h6 className="setting-sidebar__title">Your Details</h6>
+              <h6 className="setting-sidebar__title">הפרטים שלך</h6>
               <ul className="setting-sidebar-list">
                 <li className="setting-sidebar-list__item">
                   <a
                     href="#personalInfo"
                     className="setting-sidebar-list__link active"
                   >
-                    Personal Information
+                    מידע אישי
                   </a>
                 </li>
                 <li className="setting-sidebar-list__item">
                   <a href="#profile" className="setting-sidebar-list__link">
-                    Profile
+                    פרופיל
                   </a>
                 </li>
                 <li className="setting-sidebar-list__item">
                   <a href="#paymentSystem" className="setting-sidebar-list__link">
-                    Setup Payment System
+                    הגדרת מערכת תשלום
                   </a>
                 </li>
                 <li className="setting-sidebar-list__item">
                   <a href="#emailSetting" className="setting-sidebar-list__link">
-                    Email Setting
+                    הגדרות דוא"ל
                   </a>
                 </li>
                 <li className="setting-sidebar-list__item">
                   <a href="#socialNetwork" className="setting-sidebar-list__link">
-                    Social Networks
+                    רשתות חברתיות
                   </a>
                 </li>
               </ul>
@@ -53,13 +53,13 @@ const DashboardSetting = () => {
                 id="personalInfo"
               >
                 <div className="card-header">
-                  <h6 className="title">Personal Information</h6>
+                  <h6 className="title">מידע אישי</h6>
                 </div>
                 <div className="card-body">
                   <div className="row gy-3">
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="fName" className="form-label">
-                        First Name
+                        שם פרטי
                       </label>
                       <input
                         type="text"
@@ -69,7 +69,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="lName" className="form-label">
-                        Last Name
+                        שם משפחה
                       </label>
                       <input
                         type="text"
@@ -79,7 +79,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="country" className="form-label">
-                        Country
+                        מדינה
                       </label>
                       <input
                         type="text"
@@ -89,7 +89,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="address" className="form-label">
-                        Address
+                        כתובת
                       </label>
                       <input
                         type="text"
@@ -99,7 +99,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="city" className="form-label">
-                        City
+                        עיר
                       </label>
                       <input
                         type="text"
@@ -109,7 +109,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="zipCode" className="form-label">
-                        Zip Code
+                        מיקוד
                       </label>
                       <input
                         type="text"
@@ -125,13 +125,13 @@ const DashboardSetting = () => {
                 id="profile"
               >
                 <div className="card-header">
-                  <h6 className="title">Personal Information</h6>
+                  <h6 className="title">מידע אישי</h6>
                 </div>
                 <div className="card-body">
                   <div className="row gy-3">
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="fileUpload" className="form-label">
-                        Upload a New Avatar
+                        העלה אווטאר חדש
                       </label>
                       <input
                         type="file"
@@ -141,7 +141,7 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="fileUploadTwo" className="form-label">
-                        Upload a New Avatar
+                        העלה אווטאר חדש
                       </label>
                       <input
                         type="file"
@@ -150,23 +150,23 @@ const DashboardSetting = () => {
                       />
                     </div>
                     <div className="col-sm-6 col-xs-6">
-                      <label htmlFor="ProfileHeading" className="form-label">
-                        Profile Heading
+                      <label htmlFor="פרופילHeading" className="form-label">
+                        פרופיל Heading
                       </label>
                       <input
                         type="text"
                         className="common-input common-input--md border--color-dark bg--white"
-                        id="ProfileHeading"
+                        id="פרופילHeading"
                       />
                     </div>
                     <div className="col-sm-6 col-xs-6">
-                      <label className="form-label">Show Country on Your</label>
+                      <label className="form-label">Show מדינה on Your</label>
                       <div className="flx-align gap-3 mt-2">
                         <div className="common-check common-radio mb-0">
                           <input
                             className="form-check-input"
                             type="radio"
-                            name="showCountry"
+                            name="showמדינה"
                             id="yes"
                           />
                           <label className="form-check-label ps-2" htmlFor="yes">
@@ -177,7 +177,7 @@ const DashboardSetting = () => {
                           <input
                             className="form-check-input"
                             type="radio"
-                            name="showCountry"
+                            name="showמדינה"
                             id="no"
                           />
                           <label className="form-check-label ps-2" htmlFor="no">
@@ -187,12 +187,12 @@ const DashboardSetting = () => {
                       </div>
                     </div>
                     <div className="col-sm-12">
-                      <label htmlFor="aboutProfile" className="form-label">
-                        Write Something About Your Profile
+                      <label htmlFor="aboutפרופיל" className="form-label">
+                        Write Something About Your פרופיל
                       </label>
                       <textarea
                         className="common-input common-input--md border--color-dark bg--white"
-                        id="aboutProfile"
+                        id="aboutפרופיל"
                         defaultValue={""}
                       />
                     </div>
@@ -414,7 +414,7 @@ const DashboardSetting = () => {
                 id="emailSetting"
               >
                 <div className="card-header">
-                  <h6 className="title">Email Settings</h6>
+                  <h6 className="title">הגדרות דוא"לs</h6>
                 </div>
                 <div className="card-body">
                   <div className="row gy-3">
@@ -524,14 +524,14 @@ const DashboardSetting = () => {
                   <div className="row gy-3">
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="facebookUrl" className="form-label">
-                        Facebook Profile Url
+                        Facebook פרופיל Url
                       </label>
                       <div className="position-relative">
                         <input
                           type="url"
                           className="common-input common-input--md common-input--withLeftIcon"
                           id="facebookUrl"
-                          placeholder="Facebook Profile Url"
+                          placeholder="Facebook פרופיל Url"
                         />
                         <span className="input-icon input-icon--left text-main">
                           <i className="fab fa-facebook-f" />{" "}
@@ -540,14 +540,14 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="linkedinUrl" className="form-label">
-                        Linkedin Profile Url
+                        Linkedin פרופיל Url
                       </label>
                       <div className="position-relative">
                         <input
                           type="url"
                           className="common-input common-input--md common-input--withLeftIcon"
                           id="linkedinUrl"
-                          placeholder="Linkedin Profile Url"
+                          placeholder="Linkedin פרופיל Url"
                         />
                         <span className="input-icon input-icon--left text-main">
                           <i className="fab fa-linkedin-in" />
@@ -556,14 +556,14 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="behanceUrl" className="form-label">
-                        Behance Profile Url
+                        Behance פרופיל Url
                       </label>
                       <div className="position-relative">
                         <input
                           type="url"
                           className="common-input common-input--md common-input--withLeftIcon"
                           id="behanceUrl"
-                          placeholder="Behance Profile Url"
+                          placeholder="Behance פרופיל Url"
                         />
                         <span className="input-icon input-icon--left text-main">
                           <i className="fab fa-behance" />{" "}
@@ -572,14 +572,14 @@ const DashboardSetting = () => {
                     </div>
                     <div className="col-sm-6 col-xs-6">
                       <label htmlFor="dribbleUrl" className="form-label">
-                        Dribble Profile Url
+                        Dribble פרופיל Url
                       </label>
                       <div className="position-relative">
                         <input
                           type="url"
                           className="common-input common-input--md common-input--withLeftIcon"
                           id="dribbleUrl"
-                          placeholder="Dribble Profile Url"
+                          placeholder="Dribble פרופיל Url"
                         />
                         <span className="input-icon input-icon--left text-main">
                           <i className="fab fa-dribbble" />{" "}

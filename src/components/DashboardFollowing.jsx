@@ -1,4 +1,4 @@
-const DashboardFollowing = () => {
+const Dashboardעקובing = () => {
   return (
     <div className="dashboard-body__content">
     <div className="card common-card">
@@ -83,19 +83,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -117,7 +117,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -204,19 +204,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -238,7 +238,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -325,19 +325,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -359,7 +359,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -446,19 +446,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -480,7 +480,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -567,19 +567,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -601,7 +601,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -688,19 +688,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -722,7 +722,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -809,19 +809,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -843,7 +843,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -930,19 +930,19 @@ const DashboardFollowing = () => {
             </div>
             <div className="follow-item__meta">
               <strong className="font-11 fw-600 text-heading">
-                77 Items
+                77 פריטים
                 <br />
-                100 Followers
+                100 עוקבים
                 <br />
-                Member Since: September 2018
+                חבר מאז: ספטמבר 2018
                 <br />
-                Available for freelance work
+                זמין לעבודת פרילנס
               </strong>
             </div>
             <div className="follow-item__sales">
               <div className="sales">
                 <span className="sales__text mb-1 font-13 text-heading fw-500">
-                  Sales
+                  מכירות
                 </span>
                 <h6 className="sales__amount mb-0 font-body">15,830</h6>
                 <ul className="star-rating mt-2">
@@ -964,7 +964,7 @@ const DashboardFollowing = () => {
                 </ul>
                 <span className="star-rating__text text-heading font-12 fw-500">
                   {" "}
-                  116 ratings
+                  116 דירוגים
                 </span>
               </div>
             </div>
@@ -980,4 +980,4 @@ const DashboardFollowing = () => {
   );
 }
 
-export default DashboardFollowing;
+export default Dashboardעקובing;

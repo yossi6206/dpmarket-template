@@ -9,7 +9,7 @@ const DashboardDownload = () => {
         <input
           type="text"
           className="common-input common-input--lg pill border border-gray-five"
-          placeholder="Search Your Downloads"
+          placeholder="חפש בהורדות שלך"
         />
         <button type="submit" className="btn btn-main btn-icon icon border-0">
           <img src="assets/images/icons/search.svg" alt="" />
@@ -33,7 +33,7 @@ const DashboardDownload = () => {
                 href="#"
                 className="download-item__text text-main mb-3 font-12 hover-text-decoration-underline"
               >
-                Tools License
+                רישיון כלים
               </Link>
               <div className="common-check">
                 <input
@@ -46,14 +46,14 @@ const DashboardDownload = () => {
                   className="form-check-label text-body fw-400 mb-0"
                   htmlFor="notifiedd"
                 >
-                  Get notified by email if this item is updated
+                  קבל התראה במייל כשפריט זה מתעדכן
                 </label>
               </div>
             </div>
           </div>
           <div className="download-item__right flex-shrink-0 d-inline-flex flex-column gap-2 align-items-center">
             <button type="button" className="btn btn-main pill px-4">
-              Download{" "}
+              הורד{" "}
               <span className="icon-right icon ms-0">
                 {" "}
                 <i className="las la-download" />
@@ -95,7 +95,7 @@ const DashboardDownload = () => {
                 href="#"
                 className="download-item__text text-main mb-3 font-12 hover-text-decoration-underline"
               >
-                Tools License
+                רישיון כלים
               </Link>
               <div className="common-check">
                 <input
@@ -108,14 +108,14 @@ const DashboardDownload = () => {
                   className="form-check-label text-body fw-400 mb-0"
                   htmlFor="notified"
                 >
-                  Get notified by email if this item is updated
+                  קבל התראה במייל כשפריט זה מתעדכן
                 </label>
               </div>
             </div>
           </div>
           <div className="download-item__right flex-shrink-0 d-inline-flex flex-column gap-2 align-items-center">
             <button type="button" className="btn btn-main pill px-4">
-              Download{" "}
+              הורד{" "}
               <span className="icon-right icon ms-0">
                 {" "}
                 <i className="las la-download" />
@@ -157,7 +157,7 @@ const DashboardDownload = () => {
                 href="#"
                 className="download-item__text text-main mb-3 font-12 hover-text-decoration-underline"
               >
-                Tools License
+                רישיון כלים
               </Link>
               <div className="common-check">
                 <input
@@ -170,14 +170,14 @@ const DashboardDownload = () => {
                   className="form-check-label text-body fw-400 mb-0"
                   htmlFor="notifiedddd"
                 >
-                  Get notified by email if this item is updated
+                  קבל התראה במייל כשפריט זה מתעדכן
                 </label>
               </div>
             </div>
           </div>
           <div className="download-item__right flex-shrink-0 d-inline-flex flex-column gap-2 align-items-center">
             <button type="button" className="btn btn-main pill px-4">
-              Download{" "}
+              הורד{" "}
               <span className="icon-right icon ms-0">
                 {" "}
                 <i className="las la-download" />
@@ -219,7 +219,7 @@ const DashboardDownload = () => {
                 href="#"
                 className="download-item__text text-main mb-3 font-12 hover-text-decoration-underline"
               >
-                Tools License
+                רישיון כלים
               </Link>
               <div className="common-check">
                 <input
@@ -232,14 +232,14 @@ const DashboardDownload = () => {
                   className="form-check-label text-body fw-400 mb-0"
                   htmlFor="notifieds"
                 >
-                  Get notified by email if this item is updated
+                  קבל התראה במייל כשפריט זה מתעדכן
                 </label>
               </div>
             </div>
           </div>
           <div className="download-item__right flex-shrink-0 d-inline-flex flex-column gap-2 align-items-center">
             <button type="button" className="btn btn-main pill px-4">
-              Download{" "}
+              הורד{" "}
               <span className="icon-right icon ms-0">
                 {" "}
                 <i className="las la-download" />

@@ -10,7 +10,7 @@ const PopularTwo = () => {
       />
       <div className="container container-two">
         <div className="section-heading">
-          <h3 className="section-heading__title">Popular Items</h3>
+          <h3 className="section-heading__title">פריטים פופולריים</h3>
         </div>
         <ul
           className="nav common-tab style-icon justify-content-center align-items-center nav-pills mb-48"

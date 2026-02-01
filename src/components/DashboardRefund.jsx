@@ -5,10 +5,10 @@ const DashboardRefund = () => {
         <div className="col-lg-8">
           <div className="refund-feedback">
             <h5 className="refund-feedback__title">
-              Refund requests made against items you sold
+              בקשות החזר כספי עבור פריטים שמכרת
             </h5>
             <p className="refund-feedback__desc">
-              There are no open refund requests at the moment.
+              אין בקשות החזר כספי פתוחות כרגע.
             </p>
           </div>
         </div>
@@ -18,9 +18,9 @@ const DashboardRefund = () => {
               <h6 className="title font-body">Open Request</h6>
               <div className="select-has-icon">
                 <select className="common-input" defaultValue={1}>
-                  <option value={1}>Open Requests</option>
-                  <option value={1}>Open Requests</option>
-                  <option value={1}>Open Requests</option>
+                  <option value={1}>בקשות פתוחות</option>
+                  <option value={1}>בקשות פתוחות</option>
+                  <option value={1}>בקשות פתוחות</option>
                 </select>
               </div>
             </div>

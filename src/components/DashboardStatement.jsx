@@ -9,23 +9,23 @@ const DashboardStatement = () => {
         <div className="statement-item card common-card border border-gray-five">
           <div className="card-body">
             <div className="statement-item__header">
-              <h6 className="statement-item__title">Total Earning</h6>
+              <h6 className="statement-item__title">סה"כ רווחים</h6>
             </div>
             <ul className="statement-list">
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">My Funds</span>
+                <span className="statement-list__text font-13">הכספים שלי</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Earnings</span>
+                <span className="statement-list__text font-13">רווחים</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Tax Withheld</span>
+                <span className="statement-list__text font-13">מס שנוכה</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Fees</span>
+                <span className="statement-list__text font-13">עמלות</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
             </ul>
@@ -36,23 +36,23 @@ const DashboardStatement = () => {
         <div className="statement-item card common-card border border-gray-five">
           <div className="card-body">
             <div className="statement-item__header">
-              <h6 className="statement-item__title">Monthly Earnings</h6>
+              <h6 className="statement-item__title">רווחים חודשיים</h6>
             </div>
             <ul className="statement-list">
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">My Funds</span>
+                <span className="statement-list__text font-13">הכספים שלי</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Earnings</span>
+                <span className="statement-list__text font-13">רווחים</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Tax Withheld</span>
+                <span className="statement-list__text font-13">מס שנוכה</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
               <li className="statement-list__item text-center">
-                <span className="statement-list__text font-13">Fees</span>
+                <span className="statement-list__text font-13">עמלות</span>
                 <h6 className="statement-list__amount mb-0 mt-1 fw-600">$0.00</h6>
               </li>
             </ul>
@@ -66,108 +66,108 @@ const DashboardStatement = () => {
               <table className="table text-body mt--24">
                 <thead>
                   <tr>
-                    <th>Date</th>
-                    <th>Order ID</th>
-                    <th>Type</th>
-                    <th>Price</th>
-                    <th>Details</th>
+                    <th>תאריך</th>
+                    <th>מזהה הזמנה</th>
+                    <th>סוג</th>
+                    <th>מחיר</th>
+                    <th>פרטים</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Date">2022-12-31 03:36 AM</td>
-                    <td data-label="Order ID">#DR54745425478 </td>
-                    <td data-label="Type"> WordPress</td>
-                    <td data-label="Price"> 59.00 USD</td>
-                    <td data-label="Details">
+                    <td data-label="תאריך">2022-12-31 03:36 AM</td>
+                    <td data-label="מזהה הזמנה">#DR54745425478 </td>
+                    <td data-label="סוג"> וורדפרס</td>
+                    <td data-label="מחיר"> 59.00 USD</td>
+                    <td data-label="פרטים">
                       <Link scroll={false} href="#" className="btn btn-main">
                         <i className="far fa-eye" />
                       </Link>

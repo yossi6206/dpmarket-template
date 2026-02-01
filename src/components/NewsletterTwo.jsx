@@ -22,15 +22,14 @@ const NewsletterTwo = () => {
           <div className="flx-between gap-3">
             <div className="newsletter-two-content">
               <h3 className="newsletter-two-content__title mb-3">
-                Get all items for just $59!
+                קבל את כל הפריטים בסך ₪59 בלבד!
               </h3>
               <p className="newsletter-two-content__desc text-heading font-18">
-                With our broad assortment of components, making and tweaking designs
-                becomes natural. Disregard coding and partake in our topics.
+                עם מגוון רחב של רכיבים שלנו, יצירה והתאמה של עיצובים הופכת לטבעית. שכח מקידוד ותיהנה מהנושאים שלנו.
               </p>
             </div>
             <Link scroll={false} href="/all-product" className="btn btn-main btn-lg pill">
-              Grabe All Product
+              קבל את כל המוצרים
             </Link>
           </div>
         </div>

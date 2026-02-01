@@ -19,7 +19,7 @@ const BlogDetailsSidebar = () => {
                             </span>
                         </div>
                         <h2 className="blog-details-top__title mb-4 text-capitalize">
-                            How to hire a right business executive for your company
+                            איך לגייס מנהל עסקי מתאים לחברה שלך
                         </h2>
                         <p className="blog-details-top__desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit proin mi
@@ -42,7 +42,7 @@ const BlogDetailsSidebar = () => {
                                     design and development early on in a project.
                                 </p>
                                 <h4 className="blog-details-content__title mb-24">
-                                    Interview multiple candidates
+                                    ראיינו מספר מועמדים
                                 </h4>
                                 <p className="blog-details-content__desc mb-40">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit proin mi
@@ -70,7 +70,7 @@ const BlogDetailsSidebar = () => {
                                     </div>
                                 </div>
                                 <h5 className="blog-details-content__title mb-3">
-                                    Search for the right experience
+                                    חפשו את הניסיון הנכון
                                 </h5>
                                 <p className="blog-details-content__desc mb-32">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit proin mi

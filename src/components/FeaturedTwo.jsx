@@ -24,18 +24,17 @@ const FeaturedTwo = () => {
             <div className="section-content">
               <div className="section-heading style-left">
                 <h3 className="section-heading__title">
-                  Featured Contributors
+                  יוצרים מובילים
                 </h3>
                 <p className="section-heading__desc font-18 w-sm">
-                  Who creates useful, qualitful, customer centric digital
-                  products
+                  יוצרים שמייצרים מוצרים דיגיטליים איכותיים ומועילים ללקוחות
                 </p>
               </div>
               <Link scroll={false}
                 href="/profile"
                 className="btn btn-main btn-lg pill fw-300"
               >
-                All Contributors
+                כל היוצרים
               </Link>
             </div>
           </div>
@@ -62,7 +61,7 @@ const FeaturedTwo = () => {
                           Amplify
                         </h6>
                         <span className="contributor-info__text text-white font-14">
-                          12558 Sold Items
+                          12558 פריטים נמכרו
                         </span>
                       </div>
                     </div>
@@ -99,7 +98,7 @@ const FeaturedTwo = () => {
                           Radiuspoint
                         </h6>
                         <span className="contributor-info__text text-white font-14">
-                          35462 Sold Items
+                          35462 פריטים נמכרו
                         </span>
                       </div>
                     </div>
@@ -136,7 +135,7 @@ const FeaturedTwo = () => {
                           Ovious
                         </h6>
                         <span className="contributor-info__text text-white font-14">
-                          2542 Sold Items
+                          2542 פריטים נמכרו
                         </span>
                       </div>
                     </div>
@@ -173,7 +172,7 @@ const FeaturedTwo = () => {
                           Themex
                         </h6>
                         <span className="contributor-info__text text-white font-14">
-                          6854 Sold Items
+                          6854 פריטים נמכרו
                         </span>
                       </div>
                     </div>
