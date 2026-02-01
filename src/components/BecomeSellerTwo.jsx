@@ -22,17 +22,17 @@ const BecomeSellerTwo = () => {
                 className="position-absolute start-0 top-0 z-index--1"
                 alt=""
               />
-              <h3 className="seller-item__title">Become a Seller</h3>
+              <h3 className="seller-item__title">הפכו למוכרים</h3>
               <p className="seller-item__desc fw-500 text-heading">
-                Sellers receive 75% of the Item Price for items sold exclusively
-                and 50% for items sold non-exclusively. See detailed
-                informationabout the fee structure on Market.
+                מוכרים מקבלים 75% ממחיר הפריט למוצרים שנמכרים באופן בלעדי
+                ו-50% למוצרים שנמכרים שלא באופן בלעדי. ראו מידע מפורט
+                על מבנה העמלות בשוק.
               </p>
               <Link scroll={false}
                 href="/register"
                 className="btn btn-static-outline-black btn-xl pill fw-600"
               >
-                Create Seller Account
+                צור חשבון מוכר
               </Link>
             </div>
           </div>
@@ -43,17 +43,17 @@ const BecomeSellerTwo = () => {
                 className="position-absolute start-0 top-0 z-index--1"
                 alt=""
               />
-              <h3 className="seller-item__title">Earn untill 40% commission</h3>
+              <h3 className="seller-item__title">הרוויחו עד 40% עמלה</h3>
               <p className="seller-item__desc fw-500 text-heading">
-                Our Market is the world’s largest creative market place, selling
-                millions of digital assets every year. With 30% affiliate
-                commission, earning money has never been easier!
+                השוק שלנו הוא השוק היצירתי הגדול בעולם, שמוכר מיליוני
+                נכסים דיגיטליים כל שנה. עם 30% עמלת שותפים, להרוויח כסף
+                מעולם לא היה קל יותר!
               </p>
               <Link scroll={false}
                 href="/register"
                 className="btn btn-static-outline-black btn-xl pill fw-600"
               >
-                Get More Commission
+                קבל יותר עמלה
               </Link>
             </div>
           </div>
@@ -63,16 +63,16 @@ const BecomeSellerTwo = () => {
                 <div className="col-lg-3 col-sm-7">
                   <div className="support-content ps-0">
                     <h3 className="support-content__titleee mb-3">
-                      Support 24/7
+                      תמיכה 24/7
                     </h3>
                     <p className="support-content__descc mb-3 font-19">
-                      Wanna talk? Send us a message
+                      רוצים לדבר? שלחו לנו הודעה
                     </p>
                     <Link scroll={false}
-                      href="mailto:infomail@office.com"
+                      href="mailto:info@dpmarket.co.il"
                       className="btn btn-main btn-lg fw-300 pill"
                     >
-                      infomail@office.com
+                      info@dpmarket.co.il
                     </Link>
                   </div>
                 </div>
