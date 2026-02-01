@@ -1,16 +1,19 @@
-import ArrivalOne from "@/components/ArrivalOne";
-import BannerOne from "@/components/BannerOne";
-import BecomeSellerOne from "@/components/BecomeSellerOne";
-import BlogOne from "@/components/BlogOne";
-import BrandSectionOne from "@/components/BrandSectionOne";
-import FeaturedAuthor from "@/components/FeaturedAuthor";
-import FeaturedOne from "@/components/FeaturedOne";
-import FooterOne from "@/components/FooterOne";
+import ArrivalTwo from "@/components/ArrivalTwo";
+import BannerTwo from "@/components/BannerTwo";
+import BecomeSellerTwo from "@/components/BecomeSellerTwo";
+import BlogTwo from "@/components/BlogTwo";
+import BrandSectionTwo from "@/components/BrandSectionTwo";
+import FeaturedTwo from "@/components/FeaturedTwo";
+import FooterTwo from "@/components/FooterTwo";
 import HeaderOne from "@/components/HeaderOne";
-import PerformanceAuthor from "@/components/PerformanceAuthor";
-import PopularOne from "@/components/PopularOne";
-import SaleOffer from "@/components/SaleOffer";
-import SellingOne from "@/components/SellingOne";
+import Newsletter from "@/components/Newsletter";
+import PopularTwo from "@/components/PopularTwo";
+import PricingOne from "@/components/PricingOne";
+import ResourceOne from "@/components/ResourceOne";
+import SaleOfferTwo from "@/components/SaleOfferTwo";
+import SellingTwo from "@/components/SellingTwo";
+import ServiceOne from "@/components/ServiceOne";
+import Testimonial from "@/components/Testimonial";
 import Preloader from "@/helper/Preloader";
 
 export const metadata = {
@@ -21,49 +24,58 @@ export const metadata = {
 
 const page = () => {
   return (
-    <section className="change-gradient">
+    <>
       {/* Preloader */}
       <Preloader />
 
-      {/* SaleOffer */}
-      <SaleOffer />
+      {/* SaleOfferTwo */}
+      <SaleOfferTwo />
 
       {/* HeaderOne */}
       <HeaderOne />
 
-      {/* BannerOne */}
-      <BannerOne />
+      {/* BannerTwo */}
+      <BannerTwo />
 
-      {/* PopularOne */}
-      <PopularOne />
+      {/* PopularTwo */}
+      <PopularTwo />
 
-      {/* ArrivalOne */}
-      <ArrivalOne />
+      {/* SellingTwo */}
+      <SellingTwo />
 
-      {/* FeaturedOne */}
-      <FeaturedOne />
+      {/* ArrivalTwo */}
+      <ArrivalTwo />
 
-      {/* SellingOne */}
-      <SellingOne />
+      {/* FeaturedTwo */}
+      <FeaturedTwo />
 
-      {/* FeaturedAuthor */}
-      <FeaturedAuthor />
+      {/* ServiceOne */}
+      <ServiceOne />
 
-      {/* PerformanceAuthor */}
-      <PerformanceAuthor />
+      {/* Testimonial */}
+      <Testimonial />
 
-      {/* BlogOne */}
-      <BlogOne />
+      {/* PricingOne */}
+      <PricingOne />
 
-      {/* BecomeSellerOne */}
-      <BecomeSellerOne />
+      {/* BrandSectionTwo */}
+      <BrandSectionTwo />
 
-      {/* BrandSectionOne */}
-      <BrandSectionOne />
+      {/* BecomeSellerTwo */}
+      <BecomeSellerTwo />
 
-      {/* FooterOne */}
-      <FooterOne />
-    </section>
+      {/* BlogTwo */}
+      <BlogTwo />
+
+      {/* ResourceOne */}
+      <ResourceOne />
+
+      {/* Newsletter */}
+      <Newsletter />
+
+      {/* FooterTwo */}
+      <FooterTwo />
+    </>
   );
 };
 
