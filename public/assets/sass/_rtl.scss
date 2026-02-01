@@ -87,19 +87,47 @@
     
     input {
       text-align: right;
-      padding-right: 20px;
-      padding-left: 50px;
     }
 
+    .icon,
     button[type="submit"] {
-      right: unset;
-      left: 5px;
+      right: unset !important;
+      left: 8px !important;
+    }
+
+    &.style-two {
+      input {
+        padding-left: 70px !important;
+        padding-right: 180px !important;
+      }
+      
+      button[type="submit"] {
+        right: unset !important;
+        left: 8px !important;
+      }
+
+      .search-box__select {
+        left: unset !important;
+        right: 12px !important;
+        
+        &.select-has-icon::after {
+          right: unset !important;
+          left: -8px !important;
+        }
+      }
+    }
+
+    &.style-three {
+      .icon {
+        right: unset !important;
+        left: 4px !important;
+      }
     }
   }
 
   .search-box__select {
-    border-left: none;
-    border-right: 1px solid var(--border-color);
+    left: unset !important;
+    right: 12px !important;
   }
 
   // Popular search
