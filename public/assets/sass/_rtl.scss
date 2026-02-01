@@ -253,6 +253,32 @@
   .flx-between {
     flex-direction: row-reverse !important;
   }
+  
+  // Selling product section - specific fix
+  .selling-product {
+    .section-heading {
+      flex-direction: row-reverse !important;
+      
+      > div {
+        text-align: right !important;
+      }
+      
+      > a.btn {
+        order: -1 !important;
+      }
+    }
+  }
+  
+  // Service section - specific fix  
+  .service {
+    .section-heading {
+      flex-direction: row-reverse !important;
+      
+      .section-heading__inner {
+        text-align: right !important;
+      }
+    }
+  }
 
   // Sale offer bar
   .sale-offer {
