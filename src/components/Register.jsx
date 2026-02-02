@@ -1,10 +1,115 @@
+'use client'
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { createClient } from "@/lib/supabase/client";
 
 const Register = () => {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    password: '',
+    agree: false
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
+
+  const handleChange = (e) => {
+    const { id, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id === 'name' ? 'fullName' : id === 'your-password' ? 'password' : id]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setSuccess('');
+
+    // Validation
+    if (!formData.fullName.trim()) {
+      setError('נא להזין שם מלא');
+      return;
+    }
+    if (!formData.email.trim()) {
+      setError('נא להזין אימייל');
+      return;
+    }
+    if (formData.password.length < 6) {
+      setError('הסיסמה חייבת להכיל לפחות 6 תווים');
+      return;
+    }
+    if (!formData.agree) {
+      setError('יש לאשר את תנאי השימוש');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const supabase = createClient();
+      
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email: formData.email,
+        password: formData.password,
+        options: {
+          data: {
+            full_name: formData.fullName,
+          },
+        },
+      });
+
+      if (signUpError) {
+        if (signUpError.message.includes('already registered')) {
+          setError('האימייל הזה כבר רשום במערכת');
+        } else {
+          setError(signUpError.message);
+        }
+        return;
+      }
+
+      // Check if email confirmation is required
+      if (data?.user?.identities?.length === 0) {
+        setError('האימייל הזה כבר רשום במערכת');
+        return;
+      }
+
+      setSuccess('נרשמת בהצלחה! מעביר אותך לדשבורד...');
+      
+      // Redirect after short delay
+      setTimeout(() => {
+        router.push('/dashboard');
+      }, 1500);
+
+    } catch (err) {
+      setError('אירעה שגיאה, נסה שוב מאוחר יותר');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleGoogleSignUp = async () => {
+    const supabase = createClient();
+    
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+
+    if (error) {
+      setError('שגיאה בהתחברות עם גוגל');
+    }
+  };
+
   return (
     <>
-      {/* ================================== Account Page Start =========================== */}
       <section className="account d-flex">
         <img
           src="assets/images/thumbs/account-img.png"
@@ -29,8 +134,7 @@ const Register = () => {
         </div>
         <div className="account__right padding-t-120 flx-align">
           <div className="dark-light-mode">
-            {/* Light Dark Mode */}
-           <ThemeToggle />
+            <ThemeToggle />
           </div>
           <div className="account-content">
             <Link scroll={false} href="/" className="logo mb-64">
@@ -48,7 +152,20 @@ const Register = () => {
             <h4 className="account-content__title mb-48 text-capitalize">
               יצירת חשבון חינם
             </h4>
-            <form action="#">
+
+            {error && (
+              <div className="alert alert-danger mb-4" role="alert">
+                {error}
+              </div>
+            )}
+
+            {success && (
+              <div className="alert alert-success mb-4" role="alert">
+                {success}
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit}>
               <div className="row gy-4">
                 <div className="col-12">
                   <label
@@ -63,6 +180,9 @@ const Register = () => {
                       className="common-input common-input--bg common-input--withIcon"
                       id="name"
                       placeholder="השם המלא שלך"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <span className="input-icon">
                       <img src="assets/images/icons/user-icon.svg" alt="" />
@@ -82,6 +202,9 @@ const Register = () => {
                       className="common-input common-input--bg common-input--withIcon"
                       id="email"
                       placeholder="your@email.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <span className="input-icon">
                       <img src="assets/images/icons/envelope-icon.svg" alt="" />
@@ -101,10 +224,12 @@ const Register = () => {
                       className="common-input common-input--bg common-input--withIcon"
                       id="your-password"
                       placeholder="6+ תווים, אות גדולה אחת"
+                      value={formData.password}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <span
                       className="input-icon toggle-password cursor-pointer"
-                      id="#your-password"
                     >
                       <img src="assets/images/icons/lock-icon.svg" alt="" />
                     </span>
@@ -117,6 +242,9 @@ const Register = () => {
                       type="checkbox"
                       name="checkbox"
                       id="agree"
+                      checked={formData.agree}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <label
                       className="form-check-label mb-0 fw-400 font-16 text-body"
@@ -130,15 +258,17 @@ const Register = () => {
                   <button
                     type="submit"
                     className="btn btn-main btn-lg w-100 pill"
+                    disabled={loading}
                   >
-                    {" "}
-                    יצירת חשבון
+                    {loading ? 'נרשם...' : 'יצירת חשבון'}
                   </button>
                 </div>
                 <div className="col-12">
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={handleGoogleSignUp}
                     className="btn btn-outline-light btn-lg-icon btn-lg w-100 pill"
+                    disabled={loading}
                   >
                     <span className="icon icon-left">
                       <img src="assets/images/icons/google.svg" alt="" />
@@ -151,7 +281,7 @@ const Register = () => {
                     <p className="text font-14">
                       כבר יש לך חשבון?{" "}
                       <Link scroll={false}
-                        className="link text-main text-decoration-underline  fw-500"
+                        className="link text-main text-decoration-underline fw-500"
                         href="/login"
                       >
                         התחברות
@@ -164,7 +294,6 @@ const Register = () => {
           </div>
         </div>
       </section>
-      {/* ================================== Account Page End =========================== */}
     </>
   );
 };

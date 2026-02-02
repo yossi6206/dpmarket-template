@@ -1,10 +1,91 @@
+'use client'
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import { createClient } from "@/lib/supabase/client";
 
 const Login = () => {
+  const router = useRouter();
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    keepMe: false
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChange = (e) => {
+    const { id, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id === 'your-password' ? 'password' : id]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+
+    if (!formData.email.trim()) {
+      setError('נא להזין אימייל');
+      return;
+    }
+    if (!formData.password) {
+      setError('נא להזין סיסמה');
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const supabase = createClient();
+      
+      const { data, error: signInError } = await supabase.auth.signInWithPassword({
+        email: formData.email,
+        password: formData.password,
+      });
+
+      if (signInError) {
+        if (signInError.message.includes('Invalid login credentials')) {
+          setError('אימייל או סיסמה שגויים');
+        } else if (signInError.message.includes('Email not confirmed')) {
+          setError('יש לאשר את האימייל לפני ההתחברות');
+        } else {
+          setError(signInError.message);
+        }
+        return;
+      }
+
+      // Success - redirect to dashboard
+      router.push('/dashboard');
+      router.refresh();
+
+    } catch (err) {
+      setError('אירעה שגיאה, נסה שוב מאוחר יותר');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    const supabase = createClient();
+    
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo: `${window.location.origin}/auth/callback`,
+      },
+    });
+
+    if (error) {
+      setError('שגיאה בהתחברות עם גוגל');
+    }
+  };
+
   return (
     <>
-      {/* ================================== Account Page Start =========================== */}
       <section className="account d-flex">
         <img
           src="assets/images/thumbs/account-img.png"
@@ -29,7 +110,6 @@ const Login = () => {
         </div>
         <div className="account__right padding-y-120 flx-align">
           <div className="dark-light-mode">
-            {/* Light Dark Mode */}
             <ThemeToggle />
           </div>
           <div className="account-content">
@@ -48,7 +128,14 @@ const Login = () => {
             <h4 className="account-content__title mb-48 text-capitalize">
               ברוכים השבים!
             </h4>
-            <form action="#">
+
+            {error && (
+              <div className="alert alert-danger mb-4" role="alert">
+                {error}
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit}>
               <div className="row gy-4">
                 <div className="col-12">
                   <label
@@ -63,6 +150,9 @@ const Login = () => {
                       className="common-input common-input--bg common-input--withIcon"
                       id="email"
                       placeholder="your@email.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <span className="input-icon">
                       <img src="assets/images/icons/envelope-icon.svg" alt="" />
@@ -82,10 +172,12 @@ const Login = () => {
                       className="common-input common-input--bg common-input--withIcon"
                       id="your-password"
                       placeholder="6+ תווים, אות גדולה אחת"
+                      value={formData.password}
+                      onChange={handleChange}
+                      disabled={loading}
                     />
                     <span
                       className="input-icon toggle-password cursor-pointer"
-                      id="#your-password"
                     >
                       <img src="assets/images/icons/lock-icon.svg" alt="" />
                     </span>
@@ -99,6 +191,9 @@ const Login = () => {
                         type="checkbox"
                         name="checkbox"
                         id="keepMe"
+                        checked={formData.keepMe}
+                        onChange={handleChange}
+                        disabled={loading}
                       />
                       <label
                         className="form-check-label mb-0 fw-400 font-14 text-body"
@@ -119,15 +214,17 @@ const Login = () => {
                   <button
                     type="submit"
                     className="btn btn-main btn-lg w-100 pill"
+                    disabled={loading}
                   >
-                    {" "}
-                    התחברות
+                    {loading ? 'מתחבר...' : 'התחברות'}
                   </button>
                 </div>
                 <div className="col-12">
                   <button
-                    type="submit"
+                    type="button"
+                    onClick={handleGoogleSignIn}
                     className="btn btn-outline-light btn-lg-icon btn-lg w-100 pill"
+                    disabled={loading}
                   >
                     <span className="icon icon-left">
                       <img src="assets/images/icons/google.svg" alt="" />
@@ -153,7 +250,6 @@ const Login = () => {
           </div>
         </div>
       </section>
-      {/* ================================== Account Page End =========================== */}
     </>
   );
 };
