@@ -34,7 +34,6 @@ const AllProduct = () => {
       query = query.eq('category_id', selectedCategory);
     }
 
-    // Sorting
     switch (sortBy) {
       case 'price_low':
         query = query.order('price', { ascending: true });
@@ -79,12 +78,17 @@ const AllProduct = () => {
     setFilter(!filter);
   };
 
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('he-IL', {
-      style: 'currency',
-      currency: 'ILS',
-      minimumFractionDigits: 0
-    }).format(price);
+  const renderStars = (rating) => {
+    const stars = [];
+    const fullStars = Math.floor(rating || 0);
+    for (let i = 0; i < 5; i++) {
+      stars.push(
+        <li key={i} className="star-rating__item font-11">
+          <i className={`fas fa-star ${i < fullStars ? '' : 'text-muted'}`} />
+        </li>
+      );
+    }
+    return stars;
   };
 
   return (
@@ -104,73 +108,113 @@ const AllProduct = () => {
                 <span className="font-18 fw-500">סינון</span>
               </button>
               
-              <div className="d-flex align-items-center gap-3">
-                <select 
-                  className="form-select common-input common-input--sm"
-                  value={sortBy}
-                  onChange={(e) => setSortBy(e.target.value)}
-                  style={{ width: 'auto' }}
-                >
-                  <option value="newest">חדש ביותר</option>
-                  <option value="popular">פופולרי</option>
-                  <option value="price_low">מחיר: נמוך לגבוה</option>
-                  <option value="price_high">מחיר: גבוה לנמוך</option>
-                  <option value="rating">דירוג</option>
-                </select>
+              <ul className="nav common-tab nav-pills mb-0 gap-lg-2 gap-1" role="tablist">
+                <li className="nav-item" role="presentation">
+                  <button
+                    className={`nav-link ${sortBy === 'newest' ? 'active' : ''}`}
+                    onClick={() => setSortBy('newest')}
+                    type="button"
+                  >
+                    חדש ביותר
+                  </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className={`nav-link ${sortBy === 'popular' ? 'active' : ''}`}
+                    onClick={() => setSortBy('popular')}
+                    type="button"
+                  >
+                    פופולרי
+                  </button>
+                </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className={`nav-link ${sortBy === 'rating' ? 'active' : ''}`}
+                    onClick={() => setSortBy('rating')}
+                    type="button"
+                  >
+                    דירוג הכי טוב
+                  </button>
+                </li>
+              </ul>
 
-                <div className="list-grid d-flex align-items-center gap-2">
-                  <button
-                    onClick={() => handleClick("grid-view")}
-                    className={`list-grid__button grid-button ${activeButton === "grid-view" ? "active" : ""}`}
-                  >
-                    <img src="assets/images/icons/grid-view.svg" alt="" className="white-version" />
-                    <img src="assets/images/icons/grid-white.svg" alt="" className="dark-version" />
-                  </button>
-                  <button
-                    onClick={() => handleClick("list-view")}
-                    className={`list-grid__button list-button ${activeButton === "list-view" ? "active" : ""}`}
-                  >
-                    <img src="assets/images/icons/list-view.svg" alt="" className="white-version" />
-                    <img src="assets/images/icons/list-white.svg" alt="" className="dark-version" />
-                  </button>
-                </div>
+              <div className="list-grid d-flex align-items-center gap-2">
+                <button
+                  onClick={() => handleClick("grid-view")}
+                  className={`list-grid__button grid-button ${activeButton === "grid-view" ? "active" : ""}`}
+                >
+                  <img src="assets/images/icons/grid-view.svg" alt="" className="white-version" />
+                  <img src="assets/images/icons/grid-white.svg" alt="" className="dark-version" />
+                </button>
+                <button
+                  onClick={() => handleClick("list-view")}
+                  className={`list-grid__button list-button ${activeButton === "list-view" ? "active" : ""}`}
+                >
+                  <img src="assets/images/icons/list-view.svg" alt="" className="white-version" />
+                  <img src="assets/images/icons/list-white.svg" alt="" className="dark-version" />
+                </button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="row mt-4">
-          {/* Sidebar Filter */}
-          <div className={`col-lg-3 ${filter ? 'd-block' : 'd-none d-lg-block'}`}>
-            <div className="filter-sidebar">
-              <div className="filter-sidebar__item">
-                <h6 className="filter-sidebar__title">קטגוריות</h6>
-                <ul className="filter-sidebar__list">
-                  <li>
-                    <button 
-                      className={`filter-sidebar__link ${!selectedCategory ? 'active' : ''}`}
-                      onClick={() => setSelectedCategory(null)}
-                    >
-                      כל הקטגוריות
-                    </button>
-                  </li>
-                  {categories.map(cat => (
-                    <li key={cat.id}>
+        <div className="row gy-4 mt-4">
+          {/* Sidebar */}
+          <div className="col-xl-3">
+            <div className={`responsive-filter-card ${filter ? 'active' : ''}`}>
+              <div className="responsive-filter-card__header flx-between">
+                <h6 className="mb-0">סינון</h6>
+                <button type="button" className="close-btn text-body" onClick={handleFilter}>
+                  <i className="las la-times"></i>
+                </button>
+              </div>
+              
+              <div className="search-box mb-4">
+                <input
+                  type="text"
+                  className="common-input common-input--bg"
+                  placeholder="חיפוש מוצרים..."
+                />
+              </div>
+
+              <div className="filter-card mb-4">
+                <div className="filter-card__header">
+                  <h6 className="filter-card__title mb-0">קטגוריות</h6>
+                </div>
+                <div className="filter-card__body">
+                  <ul className="filter-category-list">
+                    <li className={`filter-category-list__item ${!selectedCategory ? 'active' : ''}`}>
                       <button 
-                        className={`filter-sidebar__link ${selectedCategory === cat.id ? 'active' : ''}`}
-                        onClick={() => setSelectedCategory(cat.id)}
+                        type="button"
+                        className="filter-category-list__button"
+                        onClick={() => setSelectedCategory(null)}
                       >
-                        {cat.name}
+                        כל הקטגוריות
+                        <span className="qty">{products.length}</span>
                       </button>
                     </li>
-                  ))}
-                </ul>
+                    {categories.map(cat => (
+                      <li 
+                        key={cat.id} 
+                        className={`filter-category-list__item ${selectedCategory === cat.id ? 'active' : ''}`}
+                      >
+                        <button 
+                          type="button"
+                          className="filter-category-list__button"
+                          onClick={() => setSelectedCategory(cat.id)}
+                        >
+                          {cat.name}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Products Grid */}
-          <div className="col-lg-9">
+          {/* Products */}
+          <div className="col-xl-9">
             {loading ? (
               <div className="text-center py-5">
                 <div className="spinner-border text-primary" role="status">
@@ -188,120 +232,93 @@ const AllProduct = () => {
                 </Link>
               </div>
             ) : (
-              <div className="row gy-4">
-                {products.map((product) => (
-                  <div key={product.id} className="col-lg-4 col-sm-6">
-                    <div className="product-item">
-                      <div className="product-item__thumb d-flex">
-                        <Link href={`/product-details?id=${product.id}`} className="link w-100">
-                          <img
-                            src={product.thumbnail_url || "assets/images/thumbs/product-img1.png"}
-                            alt={product.title}
-                            className="cover-img"
-                          />
-                        </Link>
-                        <button
-                          type="button"
-                          className="product-item__wishlist"
-                        >
-                          <i className="fas fa-heart" />
-                        </button>
-                      </div>
-                      <div className="product-item__content">
-                        <h6 className="product-item__title">
-                          <Link href={`/product-details?id=${product.id}`} className="link">
-                            {product.title}
-                          </Link>
-                        </h6>
-                        
-                        <div className="product-item__info flx-between gap-2">
-                          <span className="product-item__tag">
-                            {product.category?.name || 'כללי'}
-                          </span>
-                          <div className="flx-align gap-2">
-                            <span className="product-item__rating flx-align gap-1">
-                              <i className="fas fa-star" />
-                              {product.rating_average?.toFixed(1) || '0.0'}
-                            </span>
-                            <span className="product-item__sales">
-                              ({product.sales_count || 0} מכירות)
-                            </span>
-                          </div>
-                        </div>
-
-                        {product.short_description && (
-                          <p className="product-item__desc mt-2 text-muted font-14">
-                            {product.short_description.substring(0, 80)}...
-                          </p>
-                        )}
-
-                        <div className="product-item__bottom flx-between gap-2 mt-3">
-                          <div className="author-info flx-align gap-2">
-                            <div className="author-info__thumb">
+              <div className="tab-content" id="pills-tabContent">
+                <div className="tab-pane fade show active" id="pills-product">
+                  <div className="row gy-4">
+                    {products.map((product) => (
+                      <div key={product.id} className="col-xl-4 col-sm-6">
+                        <div className="product-item shadow-sm">
+                          <div className="product-item__thumb d-flex">
+                            <Link href={`/product-details?id=${product.id}`} className="link w-100">
                               <img
-                                src={product.seller?.avatar_url || "assets/images/thumbs/user-profile.png"}
-                                alt={product.seller?.full_name}
+                                src={product.thumbnail_url || "assets/images/thumbs/product-img1.png"}
+                                alt={product.title}
+                                className="cover-img"
                               />
-                            </div>
-                            <span className="author-info__name font-14">
-                              {product.seller?.full_name || product.seller?.username || 'מוכר'}
-                            </span>
+                            </Link>
+                            <button type="button" className="product-item__wishlist">
+                              <i className="fas fa-heart" />
+                            </button>
                           </div>
-                          <div className="product-item__price">
-                            {product.sale_price ? (
-                              <>
-                                <span className="product-item__price--old">
-                                  {formatPrice(product.price)}
-                                </span>
-                                <span className="product-item__price--new">
-                                  {formatPrice(product.sale_price)}
-                                </span>
-                              </>
-                            ) : (
-                              <span className="product-item__price--new">
-                                {formatPrice(product.price)}
+                          <div className="product-item__content">
+                            <h6 className="product-item__title">
+                              <Link href={`/product-details?id=${product.id}`} className="link">
+                                {product.title}
+                              </Link>
+                            </h6>
+                            <div className="product-item__info flx-between gap-2">
+                              <span className="product-item__author">
+                                מאת{" "}
+                                <Link href={`/profile?id=${product.seller?.id}`} className="link hover-text-decoration-underline">
+                                  {product.seller?.full_name || product.seller?.username || 'מוכר'}
+                                </Link>
                               </span>
-                            )}
+                              <div className="flx-align gap-2">
+                                {product.sale_price ? (
+                                  <>
+                                    <h6 className="product-item__price mb-0">₪{product.sale_price}</h6>
+                                    <span className="product-item__prevPrice text-decoration-line-through">
+                                      ₪{product.price}
+                                    </span>
+                                  </>
+                                ) : (
+                                  <h6 className="product-item__price mb-0">₪{product.price}</h6>
+                                )}
+                              </div>
+                            </div>
+                            <div className="product-item__bottom flx-between gap-2">
+                              <div>
+                                <span className="product-item__sales font-14 mb-2">
+                                  {product.sales_count || 0} מכירות
+                                </span>
+                                <div className="d-flex align-items-center gap-1">
+                                  <ul className="star-rating">
+                                    {renderStars(product.rating_average)}
+                                  </ul>
+                                  <span className="star-rating__text text-heading fw-500 font-14">
+                                    ({product.rating_count || 0})
+                                  </span>
+                                </div>
+                              </div>
+                              {product.demo_url ? (
+                                <a
+                                  href={product.demo_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="btn btn-outline-light btn-sm pill"
+                                >
+                                  צפה בהדגמה
+                                </a>
+                              ) : (
+                                <Link
+                                  href={`/product-details?id=${product.id}`}
+                                  className="btn btn-outline-light btn-sm pill"
+                                >
+                                  פרטים
+                                </Link>
+                              )}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             )}
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .filter-sidebar__link {
-          background: none;
-          border: none;
-          padding: 8px 0;
-          cursor: pointer;
-          color: inherit;
-          text-align: right;
-          width: 100%;
-          transition: color 0.3s;
-        }
-        .filter-sidebar__link:hover,
-        .filter-sidebar__link.active {
-          color: var(--main-color, #5a4bda);
-          font-weight: 600;
-        }
-        .product-item__price--old {
-          text-decoration: line-through;
-          color: #999;
-          font-size: 14px;
-          margin-left: 8px;
-        }
-        .product-item__price--new {
-          color: var(--main-color, #5a4bda);
-          font-weight: 700;
-          font-size: 18px;
-        }
-      `}</style>
     </section>
   );
 };
