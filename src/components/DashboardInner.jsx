@@ -1,11 +1,31 @@
-
-
 'use client'
 import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
+import { createClient } from '@/lib/supabase/client';
 
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 const DashboardInner = () => {
+    const [user, setUser] = useState(null);
+    const [profile, setProfile] = useState(null);
+
+    useEffect(() => {
+        const supabase = createClient();
+        
+        supabase.auth.getUser().then(({ data: { user } }) => {
+            setUser(user);
+            if (user) {
+                supabase
+                    .from('profiles')
+                    .select('*')
+                    .eq('id', user.id)
+                    .single()
+                    .then(({ data }) => {
+                        setProfile(data);
+                    });
+            }
+        });
+    }, []);
 
     let series = [{
         name: 'סדרה 1',
@@ -40,13 +60,13 @@ const DashboardInner = () => {
             {/* welcome balance Content Start */}
             <div className="welcome-balance mt-2 mb-40 flx-between gap-2">
                 <div className="welcome-balance__left">
-                    <h4 className="welcome-balance__title mb-0">ברוך הבא! מיכאל</h4>
+                    <h4 className="welcome-balance__title mb-0">ברוך הבא! {profile?.full_name || user?.email?.split('@')[0] || 'אורח'}</h4>
                 </div>
                 <div className="welcome-balance__right flx-align gap-2">
                     <span className="welcome-balance__text fw-500 text-heading">
                         יתרה זמינה:
                     </span>
-                    <h4 className="welcome-balance__balance mb-0">₪2,150.00</h4>
+                    <h4 className="welcome-balance__balance mb-0">₪{profile?.balance?.toFixed(2) || '0.00'}</h4>
                 </div>
             </div>
             {/* welcome balance Content End */}

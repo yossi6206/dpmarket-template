@@ -1,17 +1,56 @@
 'use client'
 import ThemeToggle from "@/components/ThemeToggle";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
+import { createClient } from "@/lib/supabase/client";
 
 const MasterLayout = ({ children }) => {
     let pathname = usePathname();
-let [active, setActive] = useState(false)
-let [show, setShow] = useState(false)
-    let dashboardControl =()=>{
+    const router = useRouter();
+    let [active, setActive] = useState(false)
+    let [show, setShow] = useState(false)
+    let [user, setUser] = useState(null)
+    let [profile, setProfile] = useState(null)
+
+    useEffect(() => {
+        const supabase = createClient();
+        
+        // Get initial user
+        supabase.auth.getUser().then(({ data: { user } }) => {
+            setUser(user);
+            if (user) {
+                // Get profile
+                supabase
+                    .from('profiles')
+                    .select('*')
+                    .eq('id', user.id)
+                    .single()
+                    .then(({ data }) => {
+                        setProfile(data);
+                    });
+            }
+        });
+
+        // Listen for auth changes
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+            setUser(session?.user ?? null);
+        });
+
+        return () => subscription.unsubscribe();
+    }, []);
+
+    const handleLogout = async () => {
+        const supabase = createClient();
+        await supabase.auth.signOut();
+        router.push('/login');
+        router.refresh();
+    };
+
+    let dashboardControl = () => {
         setActive(!active)
     }
-    let showProfileControl =()=>{
+    let showProfileControl = () => {
         setShow(!show)
     }
 
@@ -373,8 +412,8 @@ let [show, setShow] = useState(false)
                                         <span className="text">החזרים</span>
                                     </Link>
                                 </li>
-                                <li className={`sidebar-list__item ${pathname == "/login" && "activePage"}`}>
-                                    <Link scroll={false} href="/login" className="sidebar-list__link">
+                                <li className="sidebar-list__item">
+                                    <button onClick={handleLogout} className="sidebar-list__link w-100 border-0 bg-transparent text-start">
                                         <span className="sidebar-list__icon">
                                             <img
                                                 src="assets/images/icons/sidebar-icon13.svg"
@@ -388,7 +427,7 @@ let [show, setShow] = useState(false)
                                             />
                                         </span>
                                         <span className="text">התנתקות</span>
-                                    </Link>
+                                    </button>
                                 </li>
                             </ul>
                             {/* Sidebar List End */}
@@ -482,7 +521,7 @@ let [show, setShow] = useState(false)
                                                     </Link>
                                                 </li>
                                                 <li className="sidebar-list__item">
-                                                    <Link scroll={false} href="/login" className="sidebar-list__link">
+                                                    <button onClick={handleLogout} className="sidebar-list__link w-100 border-0 bg-transparent">
                                                         <span className="sidebar-list__icon">
                                                             <img
                                                                 src="assets/images/icons/sidebar-icon13.svg"
@@ -496,7 +535,7 @@ let [show, setShow] = useState(false)
                                                             />
                                                         </span>
                                                         <span className="text">התנתקות</span>
-                                                    </Link>
+                                                    </button>
                                                 </li>
                                             </ul>
                                         </div>
