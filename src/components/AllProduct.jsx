@@ -10,12 +10,16 @@ const AllProduct = () => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [sortBy, setSortBy] = useState('newest');
+  const [sortBy, setSortBy] = useState('all');
+  const [searchTag, setSearchTag] = useState('');
+
+  useEffect(() => {
+    fetchCategories();
+  }, []);
 
   useEffect(() => {
     fetchProducts();
-    fetchCategories();
-  }, [selectedCategory, sortBy]);
+  }, [selectedCategory, sortBy, searchTag]);
 
   const fetchProducts = async () => {
     setLoading(true);
@@ -34,18 +38,19 @@ const AllProduct = () => {
       query = query.eq('category_id', selectedCategory);
     }
 
+    if (searchTag) {
+      query = query.or(`title.ilike.%${searchTag}%,description.ilike.%${searchTag}%`);
+    }
+
     switch (sortBy) {
-      case 'price_low':
-        query = query.order('price', { ascending: true });
+      case 'best_match':
+        query = query.order('views_count', { ascending: false });
         break;
-      case 'price_high':
-        query = query.order('price', { ascending: false });
-        break;
-      case 'popular':
-        query = query.order('sales_count', { ascending: false });
-        break;
-      case 'rating':
+      case 'best_rating':
         query = query.order('rating_average', { ascending: false });
+        break;
+      case 'best_selling':
+        query = query.order('sales_count', { ascending: false });
         break;
       default:
         query = query.order('created_at', { ascending: false });
@@ -107,101 +112,131 @@ const AllProduct = () => {
                 </span>
                 <span className="font-18 fw-500">סינון</span>
               </button>
-              
-              <ul className="nav common-tab nav-pills mb-0 gap-lg-2 gap-1" role="tablist">
+              <ul
+                className="nav common-tab nav-pills mb-0 gap-lg-2 gap-1 ms-lg-auto"
+                id="pills-tab"
+                role="tablist"
+              >
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${sortBy === 'newest' ? 'active' : ''}`}
-                    onClick={() => setSortBy('newest')}
+                    className={`nav-link ${sortBy === 'all' ? 'active' : ''}`}
+                    onClick={() => setSortBy('all')}
                     type="button"
                   >
-                    חדש ביותר
+                    כל הפריטים
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${sortBy === 'popular' ? 'active' : ''}`}
-                    onClick={() => setSortBy('popular')}
+                    className={`nav-link ${sortBy === 'best_match' ? 'active' : ''}`}
+                    onClick={() => setSortBy('best_match')}
                     type="button"
                   >
-                    פופולרי
+                    התאמה מושלמת
                   </button>
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${sortBy === 'rating' ? 'active' : ''}`}
-                    onClick={() => setSortBy('rating')}
+                    className={`nav-link ${sortBy === 'best_rating' ? 'active' : ''}`}
+                    onClick={() => setSortBy('best_rating')}
                     type="button"
                   >
                     דירוג הכי טוב
                   </button>
                 </li>
+                <li className="nav-item" role="presentation">
+                  <button
+                    className={`nav-link ${sortBy === 'best_selling' ? 'active' : ''}`}
+                    onClick={() => setSortBy('best_selling')}
+                    type="button"
+                  >
+                    הנמכרים ביותר
+                  </button>
+                </li>
               </ul>
-
               <div className="list-grid d-flex align-items-center gap-2">
                 <button
-                  onClick={() => handleClick("grid-view")}
-                  className={`list-grid__button grid-button ${activeButton === "grid-view" ? "active" : ""}`}
+                  className={`list-grid__button list-button d-sm-flex d-none text-body ${activeButton === "list-view" ? "active" : ""}`}
+                  onClick={() => handleClick("list-view")}
                 >
-                  <img src="assets/images/icons/grid-view.svg" alt="" className="white-version" />
-                  <img src="assets/images/icons/grid-white.svg" alt="" className="dark-version" />
+                  <i className="las la-list" />
                 </button>
                 <button
-                  onClick={() => handleClick("list-view")}
-                  className={`list-grid__button list-button ${activeButton === "list-view" ? "active" : ""}`}
+                  className={`list-grid__button grid-button d-sm-flex d-none text-body ${activeButton === "grid-view" ? "active" : ""}`}
+                  onClick={() => handleClick("grid-view")}
                 >
-                  <img src="assets/images/icons/list-view.svg" alt="" className="white-version" />
-                  <img src="assets/images/icons/list-white.svg" alt="" className="dark-version" />
+                  <i className="las la-border-all" />
+                </button>
+                <button className="list-grid__button sidebar-btn text-body d-lg-none d-flex" onClick={handleFilter}>
+                  <i className="las la-bars" />
                 </button>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="row gy-4 mt-4">
-          {/* Sidebar */}
-          <div className="col-xl-3">
-            <div className={`responsive-filter-card ${filter ? 'active' : ''}`}>
-              <div className="responsive-filter-card__header flx-between">
-                <h6 className="mb-0">סינון</h6>
-                <button type="button" className="close-btn text-body" onClick={handleFilter}>
-                  <i className="las la-times"></i>
-                </button>
-              </div>
-              
-              <div className="search-box mb-4">
-                <input
-                  type="text"
-                  className="common-input common-input--bg"
-                  placeholder="חיפוש מוצרים..."
-                />
-              </div>
-
-              <div className="filter-card mb-4">
-                <div className="filter-card__header">
-                  <h6 className="filter-card__title mb-0">קטגוריות</h6>
+            <form action="#" className="filter-form pb-4 d-block">
+              <div className="row gy-3">
+                <div className="col-sm-4 col-xs-6">
+                  <div className="flx-between gap-1">
+                    <label htmlFor="tag" className="form-label font-16">
+                      חיפוש
+                    </label>
+                    <button type="button" className="text-body font-14" onClick={() => setSearchTag('')}>
+                      נקה
+                    </button>
+                  </div>
+                  <div className="position-relative">
+                    <input
+                      type="text"
+                      className="common-input border-gray-five common-input--withLeftIcon"
+                      id="tag"
+                      placeholder="חפש לפי שם..."
+                      value={searchTag}
+                      onChange={(e) => setSearchTag(e.target.value)}
+                    />
+                    <span className="input-icon input-icon--left">
+                      <img src="assets/images/icons/search-two.svg" alt="" />
+                    </span>
+                  </div>
                 </div>
-                <div className="filter-card__body">
-                  <ul className="filter-category-list">
-                    <li className={`filter-category-list__item ${!selectedCategory ? 'active' : ''}`}>
+              </div>
+            </form>
+          </div>
+
+          {/* Filter Sidebar */}
+          <div className="col-xl-3 col-lg-4">
+            <div className={`filter-sidebar ${filter ? "show" : ""}`}>
+              <button
+                type="button"
+                className="filter-sidebar__close p-2 position-absolute end-0 top-0 z-index-1 text-body hover-text-main font-20 d-lg-none d-block"
+                onClick={handleFilter}
+              >
+                <i className="las la-times" />
+              </button>
+              <div className="filter-sidebar__item">
+                <button
+                  type="button"
+                  className="filter-sidebar__button font-16 text-capitalize fw-500"
+                >
+                  קטגוריה
+                </button>
+                <div className="filter-sidebar__content">
+                  <ul className="filter-sidebar-list">
+                    <li className="filter-sidebar-list__item">
                       <button 
                         type="button"
-                        className="filter-category-list__button"
+                        className={`filter-sidebar-list__text ${!selectedCategory ? 'active text-main' : ''}`}
                         onClick={() => setSelectedCategory(null)}
+                        style={{ background: 'none', border: 'none', width: '100%', textAlign: 'right', cursor: 'pointer' }}
                       >
-                        כל הקטגוריות
-                        <span className="qty">{products.length}</span>
+                        כל הקטגוריות <span className="qty">{products.length}</span>
                       </button>
                     </li>
                     {categories.map(cat => (
-                      <li 
-                        key={cat.id} 
-                        className={`filter-category-list__item ${selectedCategory === cat.id ? 'active' : ''}`}
-                      >
+                      <li key={cat.id} className="filter-sidebar-list__item">
                         <button 
                           type="button"
-                          className="filter-category-list__button"
+                          className={`filter-sidebar-list__text ${selectedCategory === cat.id ? 'active text-main' : ''}`}
                           onClick={() => setSelectedCategory(cat.id)}
+                          style={{ background: 'none', border: 'none', width: '100%', textAlign: 'right', cursor: 'pointer' }}
                         >
                           {cat.name}
                         </button>
@@ -210,30 +245,51 @@ const AllProduct = () => {
                   </ul>
                 </div>
               </div>
+              <div className="filter-sidebar__item">
+                <button
+                  type="button"
+                  className="filter-sidebar__button font-16 text-capitalize fw-500"
+                >
+                  דירוג
+                </button>
+                <div className="filter-sidebar__content">
+                  <ul className="filter-sidebar-list">
+                    <li className="filter-sidebar-list__item">
+                      <div className="filter-sidebar-list__text">
+                        <div className="common-check">
+                          <input className="form-check-input" type="checkbox" id="show5star" />
+                          <label className="form-check-label" htmlFor="show5star">
+                            הצג 5 כוכבים בלבד
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Products */}
-          <div className="col-xl-9">
-            {loading ? (
-              <div className="text-center py-5">
-                <div className="spinner-border text-primary" role="status">
-                  <span className="visually-hidden">טוען...</span>
-                </div>
-                <p className="mt-3">טוען מוצרים...</p>
-              </div>
-            ) : products.length === 0 ? (
-              <div className="text-center py-5">
-                <img src="assets/images/icons/empty-box.svg" alt="" style={{ width: '100px', opacity: 0.5 }} />
-                <h5 className="mt-4">אין מוצרים להצגה</h5>
-                <p className="text-muted">לא נמצאו מוצרים בקטגוריה זו</p>
-                <Link href="/add-product" className="btn btn-main pill mt-3">
-                  הוסף מוצר ראשון
-                </Link>
-              </div>
-            ) : (
-              <div className="tab-content" id="pills-tabContent">
-                <div className="tab-pane fade show active" id="pills-product">
+          <div className="col-xl-9 col-lg-8">
+            <div className="tab-content" id="pills-tabContent">
+              <div className="tab-pane fade show active">
+                {loading ? (
+                  <div className="text-center py-5">
+                    <div className="spinner-border text-primary" role="status">
+                      <span className="visually-hidden">טוען...</span>
+                    </div>
+                    <p className="mt-3">טוען מוצרים...</p>
+                  </div>
+                ) : products.length === 0 ? (
+                  <div className="text-center py-5">
+                    <h5 className="mt-4">אין מוצרים להצגה</h5>
+                    <p className="text-muted">לא נמצאו מוצרים</p>
+                    <Link href="/add-product" className="btn btn-main pill mt-3">
+                      הוסף מוצר ראשון
+                    </Link>
+                  </div>
+                ) : (
                   <div className="row gy-4">
                     {products.map((product) => (
                       <div key={product.id} className="col-xl-4 col-sm-6">
@@ -313,9 +369,9 @@ const AllProduct = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
