@@ -259,6 +259,23 @@ const MasterLayout = ({ children }) => {
                                         <span className="text">לוח בקרה</span>
                                     </Link>
                                 </li>
+                                <li className={`sidebar-list__item ${pathname == "/add-product" && "activePage"}`}>
+                                    <Link scroll={false} href="/add-product" className="sidebar-list__link">
+                                        <span className="sidebar-list__icon">
+                                            <img
+                                                src="assets/images/icons/sidebar-icon3.svg"
+                                                alt=""
+                                                className="icon"
+                                            />
+                                            <img
+                                                src="assets/images/icons/sidebar-icon-active3.svg"
+                                                alt=""
+                                                className="icon icon-active"
+                                            />
+                                        </span>
+                                        <span className="text">הוסף מוצר</span>
+                                    </Link>
+                                </li>
                                 <li className={`sidebar-list__item ${pathname == "/dashboard-profile" && "activePage"}`}>
                                     <Link scroll={false} href="/dashboard-profile" className="sidebar-list__link">
                                         <span className="sidebar-list__icon">
